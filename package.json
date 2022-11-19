@@ -1,0 +1,15 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rodrigoncruz/desafio-wp-rodrigoCruz.git",
+  "author": "Rodrigo Cruz <rodrigonascimentocruz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.0"
+  }
+}
