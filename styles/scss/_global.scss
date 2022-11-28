@@ -6,3 +6,15 @@ a, li {
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+    max-width: 1150px;
+
+    @media (max-width: 991px) {
+        max-width: 850px;
+    }
+}
+
+ul {
+    padding: 0;
+}
