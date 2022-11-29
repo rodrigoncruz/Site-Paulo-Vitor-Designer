@@ -10,7 +10,7 @@
 </head>
 <body <?php body_class(); ?>>
     <header>
-        <section class="menu-mobile">
+        <section>
             <nav class="nav">
                 <div class="d-flex justify-content-between container">
 
@@ -65,14 +65,16 @@
             </nav>
         </div>
         <div class="nav-banner">
-            <img class="w-100" src=<?php echo get_template_directory_uri() . '/assets/img/banner.png';?> alt="Logo Paulo Vitor Designer">
+            <img class="w-100 position-relative" src=<?php echo get_template_directory_uri() . '/assets/img/banner.png';?> alt="Logo Paulo Vitor Designer">
             <div class="container">
-                <h1>
-                    A ideia da marca vale mais
-                    <br>
-                    que a própria marca.
-                </h1>
-                <a class="nav-banner-bnt" href="">Veja mais</a>
+                <div  class="position-absolute text-banner">
+                    <h1>
+                        A ideia da marca vale mais
+                        <br>
+                        que a própria marca
+                    </h1>
+                    <a href="">Veja mais</a>
+                </div>
             </div>
         </div>
         </section>

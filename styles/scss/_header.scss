@@ -3,8 +3,9 @@
     height: 80px;
     background-color: #1f1f1f;
     position: fixed;
-    
-    
+    z-index: 5;
+
+
 
     .logo {
         padding-right: 72px;
@@ -13,8 +14,10 @@
     .menu {
         display: flex;
         margin: 0;
+
         li {
             margin-left: 0px;
+
             &:not(:first-child) {
                 padding-left: 72px;
             }
@@ -24,7 +27,7 @@
                 font-size: 14px;
                 font-weight: 500;
             }
-        
+
         }
 
     }
@@ -35,7 +38,7 @@
 
     div.nav-bnt {
         background-color: #1f22fD;
-        border-radius: 4px;
+        border-radius: 6px;
         margin: 0 52px 0 50px;
 
         a {
@@ -52,19 +55,131 @@
     }
 
     .bnt-icons li {
-            margin-left: 0px;
-            &:not(:first-child) {
-                padding-left: 30px;
-            }
+        margin-left: 0px;
+
+        &:not(:first-child) {
+            padding-left: 30px;
+        }
     }
 
-    .menu-mobile {
-        position: position;
-        height: 100vh;
-        top: 0px;
-        width: 256px;
-        background-color: #363636;
+
+}
+
+.nav-banner {
+    img {
+        margin-top: 80px;
+    }
+
+    div {
+
+        top: 340px;
+
+        @media(max-width: 1263px) {
+            top: 175px;
+        }
+
+        @media(max-width: 830px) {
+            top: 130px;
+        }
+
+        @media(max-width: 418px) {
+            top: 100px;
+        }
+
+        h1 {
+            color: #fff;
+            line-height: 54px;
+            font-weight: 800;
+        }
+
+        a {
+            display: block;
+            color: #fff;
+            line-height: 54px;
+            font-weight: 800;
+            top: 340px;
+            background-color: #1f22fD;
+            width: 170px;
+            height: 50px;
+            font-size: 16px;
+            display: flex;
+            margin-top: 36px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+
+            @media(max-width: 830px) {
+                font-size: 14px;
+                width: 120px;
+                height: 40px;
+            }
+
+            @media(max-width: 659px) {
+                font-size: 12px;
+                width: 100px;
+                height: 35px;
+                margin-top: 20px;
+
+            }
+
+            @media(max-width: 418px) {
+                font-size: 12px;
+                width: 100px;
+                height: 35px;
+                margin-top: 20px;
+
+            }
+        }
     }
 }
 
+.menu-mobile {
+    position: relative;
+    height: 100vh;
+    width: 256px;
+    background-color: #363636;
+}
 
+.text-banner {
+    @media(max-width: 1263px) {
+        padding: 0 150px;
+    }
+
+    @media(max-width: 830px) {
+        padding: 0 80px;
+    }
+
+    @media(max-width: 830px) {
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media(max-width: 659px) {
+
+        h1 {
+            font-size: 20px;
+            line-height: 30px !important;
+        }
+    }
+
+    @media(max-width: 659px) {
+        padding: 0 40px;
+
+        h1 {
+            font-size: 16px;
+            line-height: 25px !important;
+        }
+    }
+
+    @media(max-width: 418px) {
+        padding: 0 30px;
+
+        h1 {
+            font-size: 16px;
+            line-height: 25px !important;
+        }
+    }
+
+}
