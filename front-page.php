@@ -1,60 +1,18 @@
 <?php get_header(); ?>
-  <main class="container text-center">
-    
-    <?php 
-
-
-    
-    $args = [
-      
-      'post_type'      => 'post',
-      'posts_per_page' => 1,
-    ];
-
-    $query = new WP_Query($args);
-
-    if( $query->have_posts() ): while( $query->have_posts() ): $query->the_post(); ?>
-
-      <h1><?php the_title(); ?></h1>
-      <p><?php the_content(); ?></p>
-
-    <?php endwhile; endif; wp_reset_query(); ?>
-
-    <br/>
-    -------------------------------------------------
-    <br/>
-
-   <?php 
-
-    $page = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
-
-
-    $args = [
-      'post_type'      => 'post',
-      'posts_per_page' => 7,
-      'post__not_in'   => [$post->ID],
-      'orderby'        => 'ID',
-      'order'          => 'ASC',
-      'paged'          => $page,
-    ];
-
-    $query = new WP_Query($args);
-    if( $query->have_posts() ): while( $query->have_posts() ): $query->the_post(); ?>
-      <?php echo get_the_ID();?>
-      <h1><?php the_title(); ?></h1>
-      <p><?php the_content(); ?></p>
-    <?php endwhile; endif; wp_reset_query(); ?>
-    <?php
-
-      $big = 999999999; // need an unlikely integer
-
-      echo paginate_links( array(
-        'base'    => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-        'format'  => '?paged=%#%',
-        'current' => max( 1, get_query_var('paged') ),
-        'total'   => $query->max_num_pages
-      ) );
-?>
+  <main class="frontPage">
+    <section class="row">
+      <div class="col-md-6 col-12">
+        <img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/paulo.png';?> alt="Foto do Designer Paulo Vitor">
+      </div>
+      <div class="col-md-6 col-12 bg-blue">
+        <div class="about">
+          <h2 class="title"> Desenvolvo projetos focados no DNA da sua empresa </h2>
+          <p>Olá, sou o Paulo Vitor, possuo uma experiência como designer com mais de 10 anos de mercado, onde ajudo empresas a alcançarem seus objetivos.</p>
+          <p> Especializado em Identidade Visual. Das diversas áreas que o marketing e a publicidade me proporcionaram, me encontrei no Design Gráfico. Trabalhei em algumas empresas a nível nacional e aprendi a desenvolver habilidades. </p>
+          <a href="">Veja mais</a>
+        </div>
+      </div>
+    </section>
   </main>
 <?php get_footer(); ?>
   
