@@ -105,4 +105,33 @@
         }
 
     }
+
+    .text-empresas {
+        h2 {
+            color: $color-gray-text;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 23px;
+            margin-top: 84px;
+
+            @media(max-width: 600px) {
+                font-size: 26px;
+                margin-top: 64px;
+            }
+        }
+
+        p {
+            color: $color-gray-text;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 84px;
+
+            @media(max-width: 600px) {
+                margin-bottom: 64px;
+                line-height: 30px;
+            }
+        }
+    }
 }
