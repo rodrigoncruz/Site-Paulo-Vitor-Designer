@@ -134,4 +134,25 @@
             }
         }
     }
+
+    .overlay {
+
+        img {
+            transition: .5s ease-in;
+            -webkit-transition: .5s ease-in;
+            -moz-transition: .5s ease-in;
+            -o-transition: .5s ease-in;
+
+            @media(max-width: 767px) {
+                height: 200px;
+            }
+        }
+        img:hover {
+            filter: brightness(20%);
+            transition: .5s ease-in;
+            -webkit-transition: .5s ease-in;
+            -moz-transition: .5s ease-in;
+            -o-transition: .5s ease-in;
+        }
+    }
 }

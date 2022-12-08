@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
 <head>
@@ -65,15 +63,13 @@
             </nav>
         </div>
         <div class="nav-banner">
-            <img class="img-banner position-relative" src=<?php echo get_template_directory_uri() . '/assets/img/banner.png';?> alt="Logo Paulo Vitor Designer">
+            <img class="img-banner position-relative" src=<?php the_field('banner'); ?> alt="Logo Paulo Vitor Designer">
             <div class="container">
                 <div  class="position-absolute text-banner">
                     <h1>
-                        A ideia da marca vale mais
-                        <br>
-                        que a própria marca
+                        <?php the_field('titulo'); ?>
                     </h1>
-                    <a href="">Veja mais</a>
+                    <a href=""><?php the_field('texto_botao'); ?></a>
                 </div>
             </div>
         </div>
