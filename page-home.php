@@ -6,7 +6,7 @@
 
 
 get_header(); ?>
-  <main class="frontPage">
+  <main class="frontPage" id="sobre">
 
     <section class="row">
       <div class="col-md-6 col-12">
@@ -22,20 +22,23 @@ get_header(); ?>
       </div>
     </section>
 
-    <section class="container text-center text-empresas">
-      <h2 class="px-4 px-sm-2"><?php the_field('titulo_empresas');?></h2>
-      <p class="px-4"><?php the_field('subtitulo_empresas');?></p>
-    </section>
+      <div id="portfolio">
+        <section class="container text-center text-empresas" style="padding-top: 83px;">
+          <h2 class="px-4 px-sm-2"><?php the_field('titulo_empresas');?></h2>
+          <p class="px-4"><?php the_field('subtitulo_empresas');?></p>
+        </section>
 
-    <section class="row overlay">
-      <?php if (have_rows('logos')): while (have_rows('logos')) : the_row();
-          $imagem = get_sub_field('imagem_empresas');
-          $link = get_sub_field('link_empresas'); 
-          $alt = get_sub_field('alt_empresas'); ?>
-            <div class="col-md-4"><a href=<?php  echo $link ?>><img class="img-paulo" src= <?php  echo $imagem ?> alt=<?php $alt ?>></a></div>
-      <?php endwhile; endif; ?>
-    </section>
+        <section class="row overlay">
+          <?php if (have_rows('logos')): while (have_rows('logos')) : the_row();
+              $imagem = get_sub_field('imagem_empresas');
+              $link = get_sub_field('link_empresas'); 
+              $alt = get_sub_field('alt_empresas'); ?>
+                <div class="col-md-4"><a href=<?php  echo $link ?>><img class="img-paulo" src= <?php  echo $imagem ?> alt=<?php $alt ?>></a></div>
+          <?php endwhile; endif; ?>
+        </section>
+      </div>
 
+    <div id="servicos"></div>
     <section class="container text-posso-ajudar">
       <?php if (have_rows('como_posso_te_ajudar')): while (have_rows('como_posso_te_ajudar')) : the_row();
             $titulo = get_sub_field('titulo_posso_te_ajudar');

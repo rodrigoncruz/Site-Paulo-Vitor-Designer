@@ -35,22 +35,17 @@
 
                     <div class="d-flex align-items-center">
                         <div class="nav-bnt d-none d-none d-lg-block">
-                            <a href="">Orçamento</a>
+                            <a href=<?php the_field('link_orcamento'); ?>><?php the_field('texto_orcamento'); ?></a>
                         </div>
                         <div class="bnt-icons d-flex">
                             <ul class="d-flex nav-icon mb-0">
-                                <li class="d-none d-lg-block">
-                                    <a href=""><img src=<?php echo get_template_directory_uri() . '/assets/img/instagram.png';?> alt="Instagram"></a>
-                                </li>
-                                <li class="d-none d-lg-block">
-                                    <a href=""><img src=<?php echo get_template_directory_uri() . '/assets/img/facebook.png';?> alt="Facebook"></a>
-                                </li>
-                                <li class="d-none d-lg-block">
-                                    <a href=""><img src=<?php echo get_template_directory_uri() . '/assets/img/Drible.png';?> alt="Drible"></a>
-                                </li>
-                                <li class="d-none d-lg-block">
-                                    <a href=""><img src=<?php echo get_template_directory_uri() . '/assets/img/Pinterest.png';?> alt="Pinterest"></a>
-                                </li>
+                                <?php if (have_rows('redes_sociais')): while (have_rows('redes_sociais')) : the_row();
+                                    $logotipo = get_sub_field('logotipo');
+                                    $link_rede = get_sub_field('link_rede'); ?>
+                                        <li class="d-none d-lg-block">
+                                            <a href=<?php echo $link_rede ?>><img src=<?php echo $logotipo ?> alt="Instagram"></a>
+                                        </li>
+                                <?php endwhile; endif; ?>
                             </ul>
                         </div>
 
