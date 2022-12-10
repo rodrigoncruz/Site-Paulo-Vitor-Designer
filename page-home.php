@@ -28,13 +28,44 @@ get_header(); ?>
     </section>
 
     <section class="row overlay">
-      <div class="col-md-4"><a href=""><img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/linkPark.jpg';?> alt="Link Park"></a></div>
-      <div class="col-md-4"><a href=""><img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/supreme.png';?> alt="Supreme"></a></div>
-      <div class="col-md-4"><a href=""><img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/logotipos.png';?> alt="Logotipo"></a></div>
-      <div class="col-md-4"><a href=""><img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/bojack.jpg';?> alt="Bojack"></a></div>
-      <div class="col-md-4"><a href=""><img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/papelada.jpg';?> alt="Papelaria"></a></div>
-      <div class="col-md-4"><a href=""><img class="img-paulo" src=<?php echo get_template_directory_uri() . '/assets/img/bela.jpg';?> alt="Bela Arina"></a></div>
+      <?php if (have_rows('logos')): while (have_rows('logos')) : the_row();
+          $imagem = get_sub_field('imagem_empresas');
+          $link = get_sub_field('link_empresas'); 
+          $alt = get_sub_field('alt_empresas'); ?>
+            <div class="col-md-4"><a href=<?php  echo $link ?>><img class="img-paulo" src= <?php  echo $imagem ?> alt=<?php $alt ?>></a></div>
+      <?php endwhile; endif; ?>
     </section>
+
+    <section class="container text-posso-ajudar">
+      <?php if (have_rows('como_posso_te_ajudar')): while (have_rows('como_posso_te_ajudar')) : the_row();
+            $titulo = get_sub_field('titulo_posso_te_ajudar');
+            $subtitulo = get_sub_field('subtitulo_posso_te_ajudar'); ?>
+              <h2 class=""><?php echo $titulo ?></h2>
+              <p class=""><?php echo $subtitulo ?></p>
+      <?php endwhile; endif; ?>
+    </section>
+
+    <section class="row container mx-auto">
+      <?php if (have_rows('cards')): while (have_rows('cards')) : the_row();
+          $icon_card = get_sub_field('icon');
+          $titulo_card = get_sub_field('titulo_card'); 
+          $descricao_card = get_sub_field('descricao_card');
+          $alt_card = get_sub_field('alt_card'); ?>
+            <div class="col-md-4 px-3" style="padding-bottom: 80px;">
+              <div class="card">
+                <div class="icone mt-n9"> 
+                  <img src= <?php  echo $icon_card ?> alt=<?php $alt_card ?>>
+                </div>
+                <h3><?php echo $titulo_card ?> </h3>
+                <p><?php echo $descricao_card ?></p>
+              </div>
+              </div>
+              
+            </div>
+      <?php endwhile; endif; ?>
+    </section>
+
+
   </main>
 <?php get_footer(); ?>
   
