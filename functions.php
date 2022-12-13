@@ -41,12 +41,12 @@ add_action('after_setup_theme', 'ceaf_config', 0);
 
 
 /***********************************************
-Custom Post Type / Taxonomy
+Custom Post Type / Taxonomy / Imagem
 ***********************************************/
 
-function video_register() {
-    $labels = array('name' => __('Vídeos'),
-    'singular_name' => __('Vídeo'),
+function imagem_register() {
+    $labels = array('name' => __('Imagens'),
+    'singular_name' => __('Imagem'),
     'add_new' => __('Adicionar Novo'));
 
     $args = array(
@@ -56,35 +56,35 @@ function video_register() {
             'show_ui'            => true,
             'show_in_menu'       => true,
             'query_var'          => true,
-            'rewrite'            => array( 'slug' => 'video' ),
+            'rewrite'            => array( 'slug' => 'imagem' ),
             'capability_type'    => 'post',
             'has_archive'        => true,
             'hierarchical'       => false,
-            'menu_position'      => null,
+            'menu_position'      => 15,
             'supports' => array('title','thumbnail', 'custom-thumbnail'),
-            'menu_icon'   => 'dashicons-video-alt3',
+            'menu_icon'   => 'dashicons-format-image',
 
 
     );
-    register_post_type('video',$args);
+    register_post_type('imagem',$args);
 }
-add_action('init', 'video_register');
+add_action('init', 'imagem_register');
 
 
-function type_video_taxonomy() {
+function type_imagem_taxonomy() {
 
         $labels = array(
-            'name'              => _x( 'Gêneros', 'taxonomy general name', 'textdomain' ),
-            'singular_name'     => _x( 'Gênero', 'taxonomy singular name', 'textdomain' ),
-            'search_items'      => __( 'Procurar Gênero', 'textdomain' ),
-            'all_items'         => __( 'Todos os Gêneros', 'textdomain' ),
-            'view_item'         => __( 'Ver Gênero', 'textdomain' ),
-            'parent_item'       => __( 'Gênero Pai', 'textdomain' ),
-            'parent_item_colon' => __( 'Gênero Pai:', 'textdomain' ),
-            'edit_item'         => __( 'Editar Gênero', 'textdomain' ),
-            'update_item'       => __( 'Atualizar Gênero', 'textdomain' ),
-            'add_new_item'      => __( 'Adicionar Gêneros', 'textdomain' ),
-            'menu_name'         => __( 'Gêneros', 'textdomain' ),
+            'name'              => _x( 'Categorias', 'taxonomy general name', 'textdomain' ),
+            'singular_name'     => _x( 'Categoria', 'taxonomy singular name', 'textdomain' ),
+            'search_items'      => __( 'Procurar Categoria', 'textdomain' ),
+            'all_items'         => __( 'Todas CAtegorias', 'textdomain' ),
+            'view_item'         => __( 'Ver Categoria', 'textdomain' ),
+            'parent_item'       => __( 'Categoria Pai', 'textdomain' ),
+            'parent_item_colon' => __( 'Categoria Pai:', 'textdomain' ),
+            'edit_item'         => __( 'Editar Categoria', 'textdomain' ),
+            'update_item'       => __( 'Atualizar Categoria', 'textdomain' ),
+            'add_new_item'      => __( 'Adicionar Categorias', 'textdomain' ),
+            'menu_name'         => __( 'Categorias', 'textdomain' ),
         );
 
         $args = array(
@@ -94,10 +94,13 @@ function type_video_taxonomy() {
             'show_ui'           => true,
             'show_admin_column' => true,
             'query_var'         => true,
-            'rewrite'           => array( 'slug' => 'genero' ),
+            'rewrite'           => array( 'slug' => 'categoria' ),
             'show_in_rest'      => true,
         );
-        register_taxonomy( 'genero', 'video', $args );
-    }    
+        register_taxonomy( 'categoria', 'imagem', $args );
+    } 
 
-add_action( 'init', 'type_video_taxonomy', 0 );
+    add_action( 'init', 'type_imagem_taxonomy', 0 );
+
+
+

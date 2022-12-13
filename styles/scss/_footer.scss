@@ -1,0 +1,101 @@
+.bg-blue-dark {
+    background-color: $color-blue-dark;
+    height: 100%;
+
+    .bnt-icons li {
+        margin-left: 0px;
+        margin-top: 103px;
+        margin-bottom: 80px;
+    
+    
+        &:not(:first-child) {
+            padding-left: 35px;
+        }
+    }
+    
+
+    h2 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 51px;
+        padding-top: 108px;
+        padding-bottom: 50px;
+        max-width: 400px;
+    }
+
+    p {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 50px;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    a.zap {
+        display: block;
+        color: $color-white;
+        line-height: 54px;
+        font-weight: 700;
+        background-color: $color-green;
+        width: 294px;
+        height: 54px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+    
+        @media(max-width: 418px) {
+            font-size: 12px;
+            width: 100px;
+            height: 35px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 767px) {
+            margin-bottom: 150px;
+        }
+
+        @media(max-width: 481px) {
+            margin-bottom: 50px;
+        }
+
+        
+    }
+
+}
+
+.bg-blue-light {
+    background-color: $color-blue;
+    
+    .content {
+        padding-bottom: 56px;
+        padding-left: 110px;
+    }
+
+}
+
+.logo-rodape {
+
+    padding: 40px 0;
+    font-size: 14px;
+
+    a span {
+        color: #000;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+
+    img {
+        width: 30px;
+        margin-right: 14px;
+    }
+}
+

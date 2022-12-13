@@ -43,7 +43,7 @@
                                     $logotipo = get_sub_field('logotipo');
                                     $link_rede = get_sub_field('link_rede'); ?>
                                         <li class="d-none d-lg-block">
-                                            <a href=<?php echo $link_rede ?>><img src=<?php echo $logotipo ?> alt="Instagram"></a>
+                                            <a href=<?php echo $link_rede ?>><img src=<?php echo $logotipo ?> alt="Logotipo Redes Sociais"></a>
                                         </li>
                                 <?php endwhile; endif; ?>
                             </ul>
