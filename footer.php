@@ -21,9 +21,7 @@
         <div class="col-sm-6 bg-blue-light">
           <div class="content">
             <h2 class="title">Fale conosco</h2>
-            <p><?php the_field('apresentacao_paragrafo_01');?></p>
-            <p><?php the_field('apresentacao_paragrafo_02');?></p>
-            <a href=""><?php the_field('texto_botao');?></a>
+          
           </div>
         </div>
       </div>

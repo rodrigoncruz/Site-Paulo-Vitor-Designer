@@ -7,6 +7,17 @@
 
 get_header(); ?>
   <main class="frontPage" id="sobre">
+    <div class="nav-banner">
+        <img class="img-banner position-relative" src=<?php the_field('banner'); ?> alt="Logo Paulo Vitor Designer">
+        <div class="container">
+            <div  class="position-absolute text-banner">
+                <h1>
+                    <?php the_field('titulo'); ?>
+                </h1>
+                <a href=""><?php the_field('texto_botao'); ?></a>
+            </div>
+        </div>
+    </div>
 
     <section class="row">
       <div class="col-md-6 col-12">
@@ -67,8 +78,6 @@ get_header(); ?>
             </div>
       <?php endwhile; endif; ?>
     </section>
-
-
   </main>
 <?php get_footer(); ?>
   
