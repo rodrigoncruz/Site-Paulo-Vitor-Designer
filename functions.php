@@ -27,7 +27,9 @@ function ceaf_config() {
 
     register_nav_menus(
         array(
-            'primary_menu' => 'Primary Menu'
+            'primary_menu' => 'Primary Menu',
+            'secundary_menu' => 'Secundary Menu',
+            'tertiary_menu' => 'Tertiary Menu'
         )
     );
 

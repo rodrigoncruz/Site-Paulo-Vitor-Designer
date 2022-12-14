@@ -14,48 +14,34 @@ get_header(); ?>
     </section>
 
     <section class="container acordion-section">
-      <h2>Sobre os Serviços:</h2>
-      <div class="px-0 py-sm-0 px-lg-0 col-sm-9 col-12">
+    <?php if (have_rows('perguntas_e_respostas')): while (have_rows('perguntas_e_respostas')) : the_row(); ?>
+        <?php $informacoes = get_sub_field('informacoes');?>
+
+      <?php if (have_rows('titulo')): while (have_rows('titulo')) : the_row(); ?>
+          <?php $titulo_acordion = get_sub_field('titulo_acordion');?>
+          <h2 class="pb-2 pt-5 titulo"><?php echo $titulo_acordion ?></h2>
+      <?php endwhile; endif; ?>
+
+      <div class="px-0 py-sm-0 px-lg-0 col-md-9 col-12">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              1 - O que exatamente você vende?
+            <h2 class="accordion-header" id="heading<?php echo $informacoes['acordion']; ?>">
+              <button class="accordion-button collapsed v-expansion-panel-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $informacoes['acordion']; ?>" aria-expanded="true" aria-controls="collapse<?php echo $informacoes['acordion']; ?>">
+                <?php echo $informacoes['subtitulo_do_acordion'] ?>
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapse<?php echo $informacoes['acordion']; ?>" class="accordion-collapse collapse" aria-labelledby="heading<?php echo $informacoes['acordion']; ?>" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                O objetivo do meu trabalho é aumentar o valor percebido sobre seu negócio desenvolvendo projetos eficazes, duradouros e funcionais para a sua marca. Um projeto bem pensado assegura o resultado esperado, diferencia sua marca de outras e gera confiança para seus consumidores.
-                Uma boa marca, quando atrelada a um bom produto/serviço, pode ser fator decisivo entre você e seu concorrente, portanto é importante enxergar meu trabalho como um investimento no seu negócio.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              2 - Como é o pagamento?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              3 - Você trabalha com materiais impressos?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <?php echo $informacoes['descricao_perguntas'] ?>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <?php endwhile; endif; ?>
+      <p>Fico feliz que meu trabalho tenha lhe despertado interesse. Caso tenha alguma dúvida<br> específica, entre em contato.<br><br>
+        Muito obrigado, um forte abraço e sucesso!
+    </p>
     </section>
   </main>
 <?php get_footer(); ?>

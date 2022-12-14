@@ -23,13 +23,29 @@
                             <?php endif; ?>
                         </div>
                         <div class="d-none d-lg-block">
-                            <?php wp_nav_menu(
-                                array(
-                                    'theme_location' => 'primary_menu',
-                                    'depth' => 1
-                                    )
-                                ); 
-                            ?>
+                            <?php if(is_page('perguntas')):
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'secundary_menu',
+                                        'depth' => 1
+                                        )
+                                    ); 
+                            elseif(is_page('sobre-mim')):
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'tertiary_menu',
+                                        'depth' => 1
+                                        )
+                                    ); 
+                            
+                                else:
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'primary_menu',
+                                        'depth' => 1
+                                        )
+                                    ); 
+                            endif; ?>
                         </div>
                     </div>
 
