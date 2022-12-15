@@ -29,12 +29,16 @@ get_header(); ?>
         <h2 class="mx-auto text-center"><?php the_field('citacao_sobre_mim'); ?></h2>
       </section>
       <section class="briefing container">
-        <h2>Processo criativo:</h2>
+        <h2><?php the_field('titulo_processo_criativo') ?></h2>
         <ul>
+          <?php if (have_rows('itens_processo_criativo')): while (have_rows('itens_processo_criativo')) : the_row();
+          $titulo = get_sub_field('titulo');
+          $descricao = get_sub_field('descricao');?>
           <li>
-            <h4>1 - Briefing:</h4>
-            <p>Tudo começa pelo briefing. Ele é a matéria prima de todo projeto. É onde vou coletar, analisar e estudar as informações sobre o seu negócio, seus objetivos e os desafios que ele possui. Com ele eu consigo identificar os atributos que o projeto precisa conter.</p>
+            <h4><?php echo $titulo ?></h4>
+            <p><?php echo $descricao ?></p>
           </li>
+          <?php endwhile; endif; ?>
         </ul>
       </section>
   </main>
