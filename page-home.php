@@ -14,7 +14,7 @@ get_header(); ?>
                 <h1>
                     <?php the_field('titulo'); ?>
                 </h1>
-                <a href=""><?php the_field('texto_botao'); ?></a>
+                <a href=<?php the_field('link_botao_banner'); ?>><?php the_field('texto_botao'); ?></a>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@ get_header(); ?>
           <h2 class="title"><?php the_field('titulo_paulo');?></h2>
           <p><?php the_field('apresentacao_paragrafo_01');?></p>
           <p><?php the_field('apresentacao_paragrafo_02');?></p>
-          <a href=""><?php the_field('texto_botao');?></a>
+          <a href=<?php the_field('link_botao_paulo_vitor'); ?>><?php the_field('texto_botao');?></a>
         </div>
       </div>
     </section>
