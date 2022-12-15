@@ -6,7 +6,7 @@
 
 
 get_header(); ?>
-  <main class="frontPage" id="sobre">
+  <main class="frontPage">
     <div class="nav-banner">
         <img class="img-banner position-relative" src=<?php the_field('banner'); ?> alt="Logo Paulo Vitor Designer">
         <div class="container">
@@ -20,7 +20,7 @@ get_header(); ?>
     </div>
 
     <section class="row">
-      <div class="col-md-6 col-12">
+      <div class="col-md-6 col-12"  id="sobre">
         <img class="img-paulo" src=<?php the_field('foto');?> alt="Foto do Designer Paulo Vitor">
       </div>
       <div class="col-md-6 col-12 bg-blue">
