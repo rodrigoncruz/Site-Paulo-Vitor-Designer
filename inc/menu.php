@@ -14,7 +14,7 @@
             'depth' => 1
             )
         ); 
-elseif(is_page('sobre-mim') || is_single() ):
+elseif(is_page('sobre-mim') || is_single() || is_404() ):
     wp_nav_menu(
         array(
             'theme_location' => 'tertiary_menu',
