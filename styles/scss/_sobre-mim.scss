@@ -88,6 +88,44 @@
         
     }
 
+    .bg-informacoes {
+        background-color: #1f1f1f;
+        color: $color-white;
+
+        h4 {
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 32px;
+            margin-bottom: 10px;
+
+            @media(max-width:960px) {
+                font-size: 35px;
+            }
+
+            @media(max-width:640px) {
+                font-size: 20px;
+            }
+        }
+
+        h5 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+
+            @media(max-width:960px) {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            @media(max-width:640px) {
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+        }
+        
+    }
+
     .briefing {
         h2 {
             padding: 128px 0;

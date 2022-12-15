@@ -41,6 +41,19 @@ get_header(); ?>
           <?php endwhile; endif; ?>
         </ul>
       </section>
+      <section class="bg-informacoes d-flex px-4">
+        <div class="d-flex container justify-content-between">
+        <?php if (have_rows('informacoes')): while (have_rows('informacoes')) : the_row();
+          $titulo = get_sub_field('dados');
+          $descricao = get_sub_field('descricao');?>
+          <li>
+          <div class="text-center pt-5 pb-5">
+            <h4><?php echo $titulo ?></h4>
+            <h5><?php echo $descricao ?></h5>
+          </div>
+          <?php endwhile; endif; ?>
+        </div>
+      </section>
   </main>
 <?php get_footer(); ?>
   
