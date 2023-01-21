@@ -25,21 +25,25 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="bg-slogan row px-4">
-        <h2 class="mx-auto text-center"><?php the_field('citacao_sobre_mim'); ?></h2>
+      <section class="bg-slogan">
+        <div class="container">
+          <h2 class="col-md-10 col-12"><?php the_field('titulo_metodologia_e_processo'); ?></h2>
+          <p class="col-md-10 col-12"><?php the_field('sub_metodologia_e_processo'); ?></p>
+        </div>
       </section>
-      <section class="briefing container">
-        <h2><?php the_field('titulo_processo_criativo') ?></h2>
-        <ul>
-          <?php if (have_rows('itens_processo_criativo')): while (have_rows('itens_processo_criativo')) : the_row();
-          $titulo = get_sub_field('titulo');
-          $descricao = get_sub_field('descricao');?>
-          <li>
-            <h4><?php echo $titulo ?></h4>
-            <p><?php echo $descricao ?></p>
-          </li>
-          <?php endwhile; endif; ?>
-        </ul>
+      <div class="bg-black">
+          <section class="briefing container">
+          <ul>
+            <?php if (have_rows('itens_processo_criativo')): while (have_rows('itens_processo_criativo')) : the_row();
+            $titulo = get_sub_field('titulo');
+            $descricao = get_sub_field('descricao');?>
+            <li>
+              <h4><?php echo $titulo ?></h4>
+              <p><?php echo $descricao ?></p>
+            </li>
+            <?php endwhile; endif; ?>
+          </ul>
+        </div>
       </section>
       <section class="bg-informacoes d-flex px-4">
         <div class="d-flex container justify-content-between">
@@ -47,7 +51,7 @@ get_header(); ?>
           $titulo = get_sub_field('dados');
           $descricao = get_sub_field('descricao');?>
           <li>
-          <div class="text-center pt-5 pb-5">
+          <div class="text-left pt-5 pb-5 d-lg-flex">
             <h4><?php echo $titulo ?></h4>
             <h5><?php echo $descricao ?></h5>
           </div>

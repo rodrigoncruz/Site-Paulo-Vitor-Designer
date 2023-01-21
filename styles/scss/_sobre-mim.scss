@@ -2,6 +2,10 @@
 
     .bg-blue {
         background-color: $color-blue;
+    }
+
+    .bg-black {
+        background-color: $color-black;
         padding: 0;
     }
 
@@ -17,7 +21,7 @@
         font-size: 28px;
         line-height: 35px;
         max-width: 460px;
-        margin-bottom: 36px;
+        margin-bottom: 28px;
 
         @media(max-width: 961px) {
             font-size: 24px;
@@ -33,7 +37,7 @@
 
     .about {
         margin-left: 84px;
-        padding-top: 190px;
+        padding-top: 70px;
         padding-bottom: 48px;
         
 
@@ -65,32 +69,33 @@
     }
 
     .bg-slogan {
-        background-color: #1f1f1f;
-        color: $color-white;
+        background-color: $color-white;
+        color: $color-black;
 
         h2 {
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 42px;
-            width: 823px;
-            padding: 80px 0;
-
-            @media(max-width:960px) {
-                width: 600px
-            }
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 50px;
+            padding-top: 80px;
 
             @media(max-width:640px) {
-                width: 500px;
-                font-size: 26px;
+                font-size: 35px;
                 line-height: 40px;
             }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            padding-bottom: 80px;
         }
         
     }
 
     .bg-informacoes {
-        background-color: #1f1f1f;
-        color: $color-white;
+        background-color: $color-white;
+        color: $color-black;
 
         h4 {
             font-weight: 600;
@@ -111,6 +116,7 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 20px;
+            margin-left: 19px;
 
             @media(max-width:960px) {
                 font-size: 14px;
@@ -120,6 +126,7 @@
             @media(max-width:640px) {
                 font-size: 10px;
                 line-height: 15px;
+                margin-left: 0;
             }
 
         }
@@ -127,6 +134,8 @@
     }
 
     .briefing {
+        padding-top: 134px;
+
         h2 {
             padding: 128px 0;
             font-weight: 700;
@@ -146,8 +155,9 @@
             h4 {
                 font-weight: 700;
                 font-size: 30px;
-                padding-left: 40px;
+                padding-left: 58px;
                 position: relative;
+                color: $color-white;
 
                 @media(max-width: 600px ) {
                     font-size: 20px;
@@ -158,8 +168,10 @@
             p {
                 font-size: 20px;
                 line-height: 42px;
-                padding-left: 40px;
+                padding-left: 58px;
                 padding-bottom: 70px;
+                color: $color-white;
+                margin-bottom: 0;
 
                 @media(max-width: 600px ) {
                     font-size: 16px;
@@ -173,10 +185,10 @@
             font-family: FontAwesome;
             float: left;
             margin-left: -22px;
-            margin-top: -55px;
+            margin-top: -39px;
             content: "\2022";
             color: #1f22fd;
-            font-size: 100px;
+            font-size: 75px;
             position: absolute;
 
             @media(max-width: 600px ) {
