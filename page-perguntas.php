@@ -7,7 +7,7 @@
 
 get_header(); ?>
   <main>
-    <section class="bg-blue">
+    <section class="bg-black">
       <div class="container">
         <h1 class="text-white">Perguntas e respostas:</h1>
       </div>
