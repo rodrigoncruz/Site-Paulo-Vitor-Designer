@@ -43,36 +43,6 @@ get_header(); ?>
           <?php endwhile; endif; ?>
         </section>
       </div>
-
-    <div id="servicos"></div>
-    <section class="container text-posso-ajudar">
-      <?php if (have_rows('como_posso_te_ajudar')): while (have_rows('como_posso_te_ajudar')) : the_row();
-            $titulo = get_sub_field('titulo_posso_te_ajudar');
-            $subtitulo = get_sub_field('subtitulo_posso_te_ajudar'); ?>
-              <h2 class=""><?php echo $titulo ?></h2>
-              <p class=""><?php echo $subtitulo ?></p>
-      <?php endwhile; endif; ?>
-    </section>
-
-    <section class="row container mx-auto">
-      <?php if (have_rows('cards')): while (have_rows('cards')) : the_row();
-          $icon_card = get_sub_field('icon');
-          $titulo_card = get_sub_field('titulo_card'); 
-          $descricao_card = get_sub_field('descricao_card');
-          $alt_card = get_sub_field('alt_card'); ?>
-            <div class="col-md-4 px-3" style="padding-bottom: 80px;">
-              <div class="card">
-                <div class="icone mt-n9"> 
-                  <img src= <?php  echo $icon_card ?> alt=<?php $alt_card ?>>
-                </div>
-                <h3><?php echo $titulo_card ?> </h3>
-                <p><?php echo $descricao_card ?></p>
-              </div>
-              </div>
-              
-            </div>
-      <?php endwhile; endif; ?>
-    </section>
   </main>
 <?php get_footer(); ?>
   
