@@ -25,7 +25,7 @@ get_header(); ?>
       </div>
       <div class="col-md-6 col-12 bg-blue">
         <div class="about">
-          <h2 class="title"><?php the_field('titulo_paulo');?></h2>
+          <h2 class="title "><?php the_field('titulo_paulo');?></h2>
           <p><?php the_field('apresentacao_paragrafo_01');?></p>
           <p><?php the_field('apresentacao_paragrafo_02');?></p>
           <a href=<?php the_field('link_botao_paulo_vitor'); ?>><?php the_field('texto_botao');?></a>
@@ -34,11 +34,6 @@ get_header(); ?>
     </section>
 
       <div id="portfolio">
-        <section class="container text-center text-empresas" style="padding-top: 83px;">
-          <h2 class="px-4 px-sm-2"><?php the_field('titulo_empresas');?></h2>
-          <p class="px-4"><?php the_field('subtitulo_empresas');?></p>
-        </section>
-
         <section class="row overlay">
           <?php if (have_rows('logos')): while (have_rows('logos')) : the_row();
               $imagem = get_sub_field('imagem_empresas');

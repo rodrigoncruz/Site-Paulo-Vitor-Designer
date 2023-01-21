@@ -18,7 +18,7 @@
                   </ul>
               </div>
         </div>
-        <div class="col-sm-6 bg-blue-light">
+        <div class="col-sm-6">
           <div class="content">
             <h2 class="title">Fale conosco</h2>
           
