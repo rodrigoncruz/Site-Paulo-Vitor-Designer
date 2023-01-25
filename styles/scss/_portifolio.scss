@@ -2,22 +2,17 @@
 
 .portifolio {
 
-    .bg-blue {
-        background-color: $color-blue;
-        padding: 0;
-    }
-
-    .img-paulo {
+    .img {
         width: 100%;
         height: 100%;
         object-fit:cover;
     }
 
     .title {
-        color: $color-white;
-        font-weight: 900;
-        font-size: 36px;
-        line-height: 44px;
+        color: $color-black;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 25px;
         max-width: 448px;
         margin-bottom: 15px;
 
@@ -43,6 +38,15 @@
         margin-left: 84px;
         padding-top: 150px;
         padding-bottom: 48px;
+
+        .seta-empresas {
+            margin-right: 12px;
+        }
+
+        .seta-oposta {
+            margin-left: 12px;
+        }
+
         
 
         @media(max-width: 600px) {
@@ -66,18 +70,18 @@
             font-weight: 400;
             font-size: 18px!important;
             line-height: 29px;
-            color: $color-white;
+            color: $color-black;
             max-width: 513px;
         }
 
         a {
             display: block;
-            color: $color-blue;
+            color: $color-white;
             line-height: 54px;
             font-weight: 800;
             top: 340px;
-            background-color: $color-white;
-            width: 170px;
+            background-color: $color-black;
+            width: 196px;
             height: 50px;
             font-size: 14px;
             display: flex;
@@ -88,8 +92,80 @@
 
             @media(max-width: 418px) {
                 font-size: 12px;
-                width: 100px;
-                height: 35px;
+                margin-top: 20px;
+            }
+
+            @media(max-width: 767px) {
+                margin-bottom: 150px;
+            }
+
+            @media(max-width: 481px) {
+                margin-bottom: 50px;
+            }
+
+            
+        }
+
+    }
+
+    .about-par {
+        margin-left: 380px;
+        padding-top: 150px;
+        padding-bottom: 48px;
+
+        .seta-empresas {
+            margin-right: 12px;
+        }
+
+        .seta-oposta {
+            margin-left: 12px;
+        }
+
+        
+
+        @media(max-width: 600px) {
+            margin-left: 40px;
+        }
+
+        @media(max-width: 1100px) {
+            margin-left: 40px;
+        }
+
+        @media(max-width: 1181px) {
+            margin-right: 40px;
+        }
+
+        @media(max-width: 481px) {
+            padding-top: 64px;
+        }
+
+
+        p {
+            font-weight: 400;
+            font-size: 18px!important;
+            line-height: 29px;
+            color: $color-black;
+            max-width: 513px;
+        }
+
+        a {
+            display: block;
+            color: $color-white;
+            line-height: 54px;
+            font-weight: 800;
+            top: 340px;
+            background-color: $color-black;
+            width: 196px;
+            height: 50px;
+            font-size: 14px;
+            display: flex;
+            margin-top: 36px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+
+            @media(max-width: 418px) {
+                font-size: 12px;
                 margin-top: 20px;
             }
 
@@ -223,7 +299,7 @@
     }
 }
 
-.nav-banner {
+.nav-banner-portfolio {
     img {
         margin-top: 80px;
     }
@@ -249,10 +325,6 @@
 
         @media(max-width: 830px) {
             top: 130px;
-        }
-
-        @media(max-width: 418px) {
-            top: 100px;
         }
 
         h1 {
@@ -286,9 +358,10 @@
 
             @media(max-width: 418px) {
                 font-size: 12px;
-                width: 100px;
+                width: 300px;
                 height: 35px;
                 margin-top: 20px;
+                line-height: 20px;
 
             }
         }
