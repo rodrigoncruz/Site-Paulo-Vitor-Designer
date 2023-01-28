@@ -3,6 +3,9 @@
 
 get_header(); ?>
   <main class="single">
+  <div class="col-lg-6">
+    <a href=<?php the_permalink(); ?>><img class="img" src=<?php the_post_thumbnail();?></a>
+  </div>
     <div class="nav-banner">
         <img class="img-banner position-relative" src=<?php the_field('imagem_banner'); ?> alt="Banner">
     </div>

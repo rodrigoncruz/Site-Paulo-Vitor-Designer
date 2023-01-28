@@ -36,9 +36,22 @@ function ceaf_config() {
     add_theme_support( 'title-tag' );
     
     add_theme_support( 'custom-logo');
+
+    add_theme_support( 'post-thumbnails' );
 }
 
 add_action('after_setup_theme', 'ceaf_config', 0);
+
+/*
+
+Número de caracters the_excerpt
+
+*/
+
+function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 
