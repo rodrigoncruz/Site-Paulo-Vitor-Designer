@@ -14,7 +14,7 @@
             'depth' => 1
             )
         ); 
-elseif(is_page('sobre-mim') || is_page('portifolio') || is_single() || is_404() ):
+elseif(is_page('sobre-mim') || is_page('portifolio') || is_page('blog') || is_single() || is_404() ):
     wp_nav_menu(
         array(
             'theme_location' => 'tertiary_menu',
@@ -22,7 +22,7 @@ elseif(is_page('sobre-mim') || is_page('portifolio') || is_single() || is_404() 
             )
         ); 
 
-    else:
+else:
     wp_nav_menu(
         array(
             'theme_location' => 'primary_menu',

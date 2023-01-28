@@ -14,7 +14,7 @@ get_header(); ?>
                 <h1>
                     <?php the_field('titulo'); ?>
                 </h1>
-                <a href=<?php the_field('link_botao_banner'); ?>><?php the_field('texto_botao'); ?></a>
+                <a href=<?php the_field('link_botao_banner'); ?>><?php the_field('texto_botao_banner'); ?></a>
             </div>
         </div>
     </div>
