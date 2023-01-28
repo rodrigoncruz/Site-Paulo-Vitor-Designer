@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="container">
             <div  class="position-absolute text-banner">
                 <h1>
-                    <?php the_field('titulo'); ?> <img class="mt-0 seta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>>
+                    <?php the_field('titulo'); ?>
                 </h1>
                 <p>
                     <?php the_field('subtitulo'); ?>

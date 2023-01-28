@@ -340,9 +340,9 @@
 
         h1 {
             color: $color-white;
-            line-height: 25px;
-            font-weight: 700;
-            font-size: 24px;
+            line-height: 30px;
+            font-weight: 800;
+            font-size: 52px;
         }
 
         p {
@@ -351,7 +351,7 @@
             font-weight: 500;
             font-size: 16px;
             width: 450px;
-            padding-top: 20px;
+            padding-top: 6px;
 
             @media(max-width: 830px) {
                 font-size: 14px;
