@@ -45,7 +45,10 @@ get_header(); ?>
           </div>
 
           <?php else : ?>
-            
+
+            <div class="col-md-6 col-12 d-block d-lg-none">
+              <img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>">
+            </div>
             <div class="col-md-6 col-12">
               <div class="about-par">
                 <h2 class="title "><?php echo $titulo ?></h2>
@@ -53,9 +56,9 @@ get_header(); ?>
                 <a href=<?php echo $link ?>><?php echo $texto_bnt ?><img class="mt-0 seta-oposta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>></a>
               </div>
             </div>
-          <div class="col-md-6 col-12">
-            <img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>">
-          </div>
+            <div class="col-md-6 col-12 d-none d-lg-block">
+              <img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>">
+            </div>
           <?php endif; ?>
       <?php endwhile; endif; ?>
     </section>

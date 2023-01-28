@@ -109,7 +109,7 @@
     }
 
     .about-par {
-        margin-left: 380px;
+        margin-left: 40%;
         padding-top: 150px;
         padding-bottom: 48px;
 
@@ -121,7 +121,18 @@
             margin-left: 12px;
         }
 
-        
+
+        @media(max-width: 1782px) {
+            margin-left: 35%;
+        }
+
+        @media(max-width: 1609px) {
+            margin-left: 25%;
+        }
+
+        @media(max-width: 1366px) {
+            margin-left: 20%;
+        }
 
         @media(max-width: 600px) {
             margin-left: 40px;
