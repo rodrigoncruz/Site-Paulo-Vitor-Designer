@@ -119,3 +119,25 @@ function type_imagem_taxonomy() {
 
 
 
+    function custom_category_single_template($single_template) {
+        global $post;
+        $categories = get_the_category($post->ID);
+        if ( !empty($categories) ) {
+            $template = '';
+            foreach( $categories as $category ) {
+                $template = locate_template( array( "single-{$category->slug}.php", 'single.php' ) );
+                if ( !empty($template) ) {
+                    break;
+                }
+            }
+            if ( !empty($template) ) {
+                return $template;
+            }
+        }
+        return $single_template;
+    }
+    add_filter( 'single_template', 'custom_category_single_template' );
+    
+
+
+

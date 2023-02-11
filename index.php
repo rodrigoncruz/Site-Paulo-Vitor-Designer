@@ -34,6 +34,16 @@ get_header(); ?>
                       <div class="about-par">
                         <h2 class="title "><?php the_title(); ?></h2>
                         <p><?php the_excerpt( ); ?></p>
+                        <div class="d-flex align-items-center comments mb-2">
+                          <img src=<?php echo get_template_directory_uri() . '/assets/img/comentarios.png' ?> alt="">
+                          <?php
+                          if(get_comments_number() == 0 ): ?>
+                            <p class="mb-1">Faça um comentário</p>
+                          <?php else: ?> 
+                            <p class="mb-1"><?php echo get_comments_number(); ?> comentários.</p>
+                          <?php endif; ?>  
+                        </div>
+                        <a href="<?php echo get_permalink();?>">Leia o artigo</a>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -67,6 +77,15 @@ get_header(); ?>
                             <div class="about-par-posts">
                               <h2 class="title"><?php the_title(); ?></h2>
                               <p><?php the_excerpt(20); ?></p>
+                              <div class="d-flex align-items-center comments mb-2">
+                                <img src=<?php echo get_template_directory_uri() . '/assets/img/comentarios.png' ?> alt="">
+                                <?php
+                                  if(get_comments_number() == 0 ): ?>
+                                    <p class="mb-1">Faça um comentário</p>
+                                  <?php else: ?> 
+                                    <p class="mb-1"><?php echo get_comments_number(); ?> comentários.</p>
+                                  <?php endif; ?>                               </div>
+                              <a href="<?php echo get_permalink();?>">Leia o artigo</a>
                             </div>
                           </div>
                         </div>

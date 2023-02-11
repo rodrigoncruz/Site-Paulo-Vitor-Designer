@@ -63,9 +63,17 @@
     .about-par {
             padding-left: 30px;
             padding-right: 30px;
-            padding-top: 90px;
+            padding-top: 64px;
             padding-bottom: 71px;
             height: 326px;
+
+            @media(max-width: 991px) {
+                height: 361px;
+            }
+
+            @media(max-width: 441px) {
+                height: 400px;
+            }
 
         p {
             font-weight: 400;
@@ -78,18 +86,18 @@
         a {
             display: block;
             color: $color-white;
-            line-height: 54px;
-            font-weight: 800;
+            line-height: 24px;
+            font-weight: 700;
             top: 340px;
-            background-color: $color-black;
-            width: 196px;
-            height: 50px;
-            font-size: 14px;
+            background-color: $color-blue;
+            width: 98px;
+            height: 22px;
+            font-size: 10px;
             display: flex;
-            margin-top: 36px;
             justify-content: center;
             align-items: center;
-            border-radius: 6px;
+            border-radius: 6px 0px 0px 6px;
+
 
             @media(max-width: 418px) {
                 font-size: 12px;
@@ -109,11 +117,33 @@
 
     }
 
+    .comments {
+        p {
+            font-weight: 500;
+            font-size: 11px !important;
+            line-height: 24px;
+            color: $color-gray-dark;
+            margin-bottom: 0;
+            margin-left: 5px;
+        }
+    }
+
     .about-par-posts {
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 22px;
-        padding-bottom: 71px;
+        padding-bottom: 20px;
+
+        .comments {
+            p {
+                font-weight: 500;
+                font-size: 11px !important;
+                line-height: 24px;
+                color: $color-gray-dark;
+                margin-bottom: 0;
+                margin-left: 5px;
+            }
+        }
         
     p {
         font-weight: 400;
@@ -126,18 +156,19 @@
     a {
         display: block;
         color: $color-white;
-        line-height: 54px;
-        font-weight: 800;
+        line-height: 24px;
+        font-weight: 700;
         top: 340px;
-        background-color: $color-black;
-        width: 196px;
-        height: 50px;
-        font-size: 14px;
+        background-color: $color-blue;
+        width: 98px;
+        height: 22px;
+        font-size: 10px;
         display: flex;
-        margin-top: 36px;
+        margin-top: 10px;
         justify-content: center;
         align-items: center;
-        border-radius: 6px;
+        border-radius: 6px 0px 0px 6px;
+
 
         @media(max-width: 418px) {
             font-size: 12px;
@@ -145,11 +176,11 @@
         }
 
         @media(max-width: 767px) {
-            margin-bottom: 150px;
+            margin-bottom: 50px;
         }
 
         @media(max-width: 481px) {
-            margin-bottom: 50px;
+            margin-bottom: 15px;
         }
 
         
