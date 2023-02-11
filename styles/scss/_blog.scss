@@ -3,7 +3,7 @@
 .blog {
 
     .img {
-        max-width:575px;
+        width: 100%;
         max-height:326px;
         object-fit: cover;
     }
@@ -12,10 +12,19 @@
         max-width:366px;
         max-height:206px;
         object-fit: cover;
+
+        @media(max-width: 991px) {
+            max-width: 100%;
+            max-height:303px;
+        }
     }
 
     .card-text {
         max-width:366px;
+
+        @media(max-width: 991px) {
+            max-width: 100%;
+        }
     }
 
     .title {
@@ -56,6 +65,7 @@
             padding-right: 30px;
             padding-top: 90px;
             padding-bottom: 71px;
+            height: 326px;
 
         p {
             font-weight: 400;
