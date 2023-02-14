@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Template Name: Single Empresas
+ */
 
 get_header(); ?>
   <main class="single">

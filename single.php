@@ -1,6 +1,5 @@
 <?php
 
-
 get_header(); ?>
   <main class="single">
   <div class="col-lg-6">
