@@ -2,6 +2,25 @@
 
 .frontPage {
 
+    .carrossel {
+        margin-bottom: 149px;
+        h2 {
+            color: #000;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 32px;
+            margin-bottom: 50px;
+            margin-top: 149px;
+            margin-left: 12px;
+        }
+
+        img {
+            max-width: 181px;
+            max-height: 125px;
+            object-fit: cover;
+        }
+    }
+
     .bg-blue {
         background-color: $color-blue;
         padding: 0;

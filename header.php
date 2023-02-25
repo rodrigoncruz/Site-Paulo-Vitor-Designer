@@ -13,9 +13,7 @@
                 <div class="d-flex justify-content-between container">
 
                     <div class="d-flex align-items-center">
-                        <div class="logo">
-                            <?php get_template_part('/inc/menu'); ?>
-                        </div>
+                        <?php get_template_part('/inc/menu'); ?>
                     </div>
 
                     <div class="d-flex align-items-center">
@@ -32,10 +30,6 @@
                                         </li>
                                 <?php endwhile; endif; ?>
                             </ul>
-                        </div>
-
-                        <div class="text-white d-block d-lg-none">
-                            oi
                         </div>
                     </div>
 

@@ -43,6 +43,16 @@ get_header(); ?>
           <?php endwhile; endif; ?>
         </section>
       </div>
+      <section class="container carrossel">
+        <h2><?php the_field('titulo_carrossel'); ?></h2>
+          <div class="slick-carousel">
+          <?php if (have_rows('carrosel')): while (have_rows('carrosel')) : the_row(); 
+                $imagem_cad = get_sub_field('imagem'); ?>
+              <div class="card-slick d-flex align-items-center justify-content-center"> <img src=<?php echo $imagem_cad; ?> alt="Logo clientes"></div>
+            <?php endwhile; endif; ?>
+          </div>
+      </section>
+
   </main>
 <?php get_footer(); ?>
   
