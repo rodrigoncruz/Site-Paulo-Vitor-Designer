@@ -5,11 +5,8 @@
 
 get_header(); ?>
   <main class="single">
-  <div class="col-lg-6">
-    <a href=<?php the_permalink(); ?>><img class="img" src=<?php the_post_thumbnail();?>></a>
-  </div>
     <div class="nav-banner">
-        <img class="img-banner position-relative" src=<?php the_field('imagem_banner'); ?> alt="Banner">
+        <img class="img-banner position-relative" src=<?php echo get_field('imagem_banner'); ?> alt="Banner">
     </div>
     <div class="row">
       <?php if(!get_the_content() == ''): ?>
@@ -32,6 +29,26 @@ get_header(); ?>
         <img class="img-banner position-relative" src=<?php echo $titulo ?> alt="Banner">
         <?php endwhile; endif; ?>
     </div>
+
+    <section class="container carrossel">
+        <h2><?php echo get_field('titulo_carrossel'); ?></h2>
+          <div class="slick-carousel">
+
+          <?php 
+          $current_post_id = get_the_ID();
+          $args = array(
+                'category_name' => 'empresas',
+                'posts_per_page' => -1,
+                'post__not_in' => array($current_post_id)
+            );
+
+            $query = new WP_Query( $args ); ?>
+
+            <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+              <div class="card-slick d-flex align-items-center justify-content-center"> <a href="<?php the_permalink() ?>"><img src=<?php echo get_field('imagem_banner'); ?> alt="Logo clientes"></a></div>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+          </div>
+    </section>
   </main>
 <?php get_footer(); ?>
   

@@ -47,8 +47,9 @@ get_header(); ?>
         <h2><?php the_field('titulo_carrossel'); ?></h2>
           <div class="slick-carousel">
           <?php if (have_rows('carrosel')): while (have_rows('carrosel')) : the_row(); 
-                $imagem_cad = get_sub_field('imagem'); ?>
-              <div class="card-slick d-flex align-items-center justify-content-center"> <img src=<?php echo $imagem_cad; ?> alt="Logo clientes"></div>
+                $imagem_cad = get_sub_field('imagem'); 
+                $link_cad = get_sub_field('link'); ?>
+              <div class="card-slick d-flex align-items-center justify-content-center"> <a href="<?php echo $link_cad['url']; ?>"><img src=<?php echo $imagem_cad; ?> alt="Logo clientes"></div></a>
             <?php endwhile; endif; ?>
           </div>
       </section>
