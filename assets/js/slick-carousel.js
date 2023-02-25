@@ -1,39 +1,73 @@
 jQuery(document).ready(function($) {
   $('.slick-carousel').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 500,
+    dots: true,
+    infinite: true,
+    speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    cssEase: 'linear',
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
     ]
   });
 
   $('.slick-carousel-single-blog').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 500,
-    slidesToShow: 3,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    cssEase: 'linear',
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
     ]
   });
 

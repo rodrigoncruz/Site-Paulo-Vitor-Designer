@@ -9,30 +9,31 @@
     <?php endif; ?>
 </div>
 <div>
-<?php if(is_page('perguntas')):
-    wp_nav_menu(
-        array(
-            'theme_location'    => 'secundary_menu',
-            'depth'             => 1
-            )
-        ); 
-elseif(is_page('sobre-mim') || is_page('portifolio') || is_page('blog') || is_single() || is_404() ):
-    wp_nav_menu(
-        array(
-            'theme_location' => 'tertiary_menu',
-            'depth' => 1
-            )
-        ); 
+    <?php if(is_page('perguntas')):
+        wp_nav_menu(
+            array(
+                'theme_location'    => 'secundary_menu',
+                'depth'             => 1
+                )
+            ); 
+    elseif(is_page('sobre-mim') || is_page('portifolio') || is_page('blog') || is_single() || is_404() ):
+        wp_nav_menu(
+            array(
+                'theme_location' => 'tertiary_menu',
+                'depth' => 1
+                )
+            ); 
 
-else:
-    wp_nav_menu(
-        array(
-            'theme_location' => 'primary_menu',
-            'depth' => 1
-            )
-        ); 
-endif; ?>
+    else:
+        wp_nav_menu(
+            array(
+                'theme_location' => 'primary_menu',
+                'depth' => 1
+                )
+            ); 
+    endif; ?>
 </div>
+<div>oi</div>
 
 <!-- <nav id="navbar-custom" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
