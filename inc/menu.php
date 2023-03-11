@@ -8,7 +8,7 @@
         </a>
     <?php endif; ?>
 </div>
-<div>
+<div class="d-none d-sm-block">
     <?php if(is_page('perguntas')):
         wp_nav_menu(
             array(
@@ -33,33 +33,11 @@
             ); 
     endif; ?>
 </div>
-<div>oi</div>
 
-<!-- <nav id="navbar-custom" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <div class="">
-            <?php if(has_custom_logo() ): ?>
-                <?php the_custom_logo(); ?>
-            <?php else: ?>
-                <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>">
-                    <img src=<?php echo get_template_directory_uri() . '/assets/img/logo.png';?> alt="Logo Paulo Vitor Designer">
-                </a>
-            <?php endif; ?>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse w-100" id="navbarNav">
-            <?php
-            wp_nav_menu( array(
-                'theme_location'    => 'primary_menu',
-                'depth'             => 1,
-                'container'         => '',
-                'menu_class'        => 'navbar-nav',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker(),
-            ) );
-            ?>
-        </div>
-    </div>
-</nav> -->
+<div class="d-block d-sm-none">
+    <?php
+        $menu_id = '807';
+        $menu_output = do_shortcode('[rmp_menu id="'.$menu_id.'"]');
+        echo $menu_output;
+    ?>
+</div>

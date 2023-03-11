@@ -7,6 +7,14 @@
         margin-top: 103px;
         margin-bottom: 80px;
     
+        &:not(:first-child) {
+            padding-left: 35px;
+        }
+    }
+
+    .bnt-icons-mobile li {
+        margin-left: 0px;
+        margin-top: 31px;
     
         &:not(:first-child) {
             padding-left: 35px;
@@ -20,6 +28,10 @@
         line-height: 51px;
         padding-top: 108px;
         padding-bottom: 21px;
+
+        @media(max-width: 575px) {
+            padding-top: 38px;
+        }
     }
 
     p {
@@ -35,15 +47,11 @@
     }
 
     a.zap {
-        display: block;
         color: $color-white;
-        line-height: 54px;
         font-weight: 700;
         background-color: $color-green;
-        width: 294px;
-        height: 54px;
+        padding: 22px 40px;
         font-size: 14px;
-        display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;

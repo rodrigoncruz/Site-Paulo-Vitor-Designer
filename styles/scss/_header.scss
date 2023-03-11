@@ -1,5 +1,16 @@
 @import 'variables';
 
+.mobile-menu-custom-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+
+
 .menu-footer .menu {
     display: flex;
     margin: 0;

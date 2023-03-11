@@ -93,4 +93,3 @@ jQuery(document).ready(function($) {
   $('.slick-slide').css('margin-right', '12px');
   $('.slick-slide').css('margin-left', '12px');
 });
-  
