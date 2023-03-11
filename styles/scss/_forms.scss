@@ -1,0 +1,61 @@
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.title-forms {
+    h2 {
+        color: $color-white;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="email"] 
+{
+    width: 100%;
+    border: 2px solid $color-white;
+    transition: border-color 0.3s ease-in-out;
+    border-radius: 6px;
+    padding: 8px 0 8px 12px;
+    padding-left: 12px;
+
+input[type="text"]::placeholder {
+    text-indent: 12px;
+    }
+}
+
+textarea {
+    width: 100%;
+    border: 3px solid $color-white;
+    transition: border-color 0.3s ease-in-out;
+    border-radius: 6px;
+    padding: 8px 0 166px 12px;
+    padding-left: 12px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #f7b11d;
+}
+
+input[type="submit"] {
+    padding: 15px 75px;
+    border-radius: 6px;
+    color: $color-white;
+    background: #f7b11d;
+    border:none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 14px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: #c58205;
+    }
+}

@@ -18,11 +18,11 @@
 
                     <div class="d-flex align-items-center">
                         <div class="nav-bnt d-none d-none d-lg-block">
-                            <a href=<?php the_field('link_orcamento'); ?>><?php the_field('texto_orcamento'); ?></a>
+                            <a href=<?php the_field('link_orcamento','options'); ?>><?php the_field('texto_orcamento','options'); ?></a>
                         </div>
                         <div class="bnt-icons d-flex">
                             <ul class="d-flex nav-icon mb-0">
-                                <?php if (have_rows('redes_sociais')): while (have_rows('redes_sociais')) : the_row();
+                                <?php if (have_rows('redes_sociais','options')): while (have_rows('redes_sociais','options')) : the_row();
                                     $logotipo = get_sub_field('logotipo');
                                     $link_rede = get_sub_field('link_rede'); ?>
                                         <li class="d-none d-lg-block">

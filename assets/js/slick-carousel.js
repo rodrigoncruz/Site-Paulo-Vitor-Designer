@@ -12,34 +12,52 @@ jQuery(document).ready(function($) {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false,
+          arrows: false,
+          variableWidth: false
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          dots: false,
+          arrows: false,
+          variableWidth: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          centerMode: true,
+          variableWidth: false
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          centerMode: true,
+          variableWidth: false
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
+  
 
   $('.slick-carousel-single-blog').slick({
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {

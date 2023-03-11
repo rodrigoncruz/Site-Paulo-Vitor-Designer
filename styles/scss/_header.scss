@@ -1,5 +1,25 @@
 @import 'variables';
 
+.menu-footer .menu {
+    display: flex;
+    margin: 0;
+
+    li {
+        margin-left: 0px;
+
+        &:not(:first-child) {
+            padding-left: 44px;
+        }
+
+        a {
+            color: $color-gray;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    }
+
+}
 
 .home {
     .nav {

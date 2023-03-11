@@ -40,7 +40,8 @@ function ceaf_config() {
         array(
             'primary_menu' => 'Primary Menu',
             'secundary_menu' => 'Secundary Menu',
-            'tertiary_menu' => 'Tertiary Menu'
+            'tertiary_menu' => 'Tertiary Menu',
+            'footer_menu' => 'Footer Menu'
         )
     );
 
@@ -67,66 +68,91 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 /***********************************************
+ACF Options
+***********************************************/
+
+if ( function_exists('acf_add_options_page') ) {
+    acf_add_options_page([
+        'page_title'    => 'Rodapé',
+        'menu_title'    => 'Rodapé',
+        'menu_slug'     => 'rodape',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ]);
+
+    acf_add_options_page([
+        'page_title'    => 'Cabeçalho',
+        'menu_title'    => 'Cabeçalho',
+        'menu_slug'     => 'cabecalho',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ]);
+}
+
+
+
+
+/***********************************************
 Custom Post Type / Taxonomy / Imagem
 ***********************************************/
 
-function imagem_register() {
-    $labels = array('name' => __('Imagens'),
-    'singular_name' => __('Imagem'),
-    'add_new' => __('Adicionar Novo'));
+// function imagem_register() {
+//     $labels = array('name' => __('Imagens'),
+//     'singular_name' => __('Imagem'),
+//     'add_new' => __('Adicionar Novo'));
 
-    $args = array(
-            'labels' => $labels,
-            'public'             => true,
-            'publicly_queryable' => true,
-            'show_ui'            => true,
-            'show_in_menu'       => true,
-            'query_var'          => true,
-            'rewrite'            => array( 'slug' => 'imagem' ),
-            'capability_type'    => 'post',
-            'has_archive'        => true,
-            'hierarchical'       => false,
-            'menu_position'      => 15,
-            'supports' => array('title','thumbnail', 'custom-thumbnail'),
-            'menu_icon'   => 'dashicons-format-image',
-
-
-    );
-    register_post_type('imagem',$args);
-}
-add_action('init', 'imagem_register');
+//     $args = array(
+//             'labels' => $labels,
+//             'public'             => true,
+//             'publicly_queryable' => true,
+//             'show_ui'            => true,
+//             'show_in_menu'       => true,
+//             'query_var'          => true,
+//             'rewrite'            => array( 'slug' => 'imagem' ),
+//             'capability_type'    => 'post',
+//             'has_archive'        => true,
+//             'hierarchical'       => false,
+//             'menu_position'      => 15,
+//             'supports' => array('title','thumbnail', 'custom-thumbnail'),
+//             'menu_icon'   => 'dashicons-format-image',
 
 
-function type_imagem_taxonomy() {
+//     );
+//     register_post_type('imagem',$args);
+// }
+// add_action('init', 'imagem_register');
 
-        $labels = array(
-            'name'              => _x( 'Categorias', 'taxonomy general name', 'textdomain' ),
-            'singular_name'     => _x( 'Categoria', 'taxonomy singular name', 'textdomain' ),
-            'search_items'      => __( 'Procurar Categoria', 'textdomain' ),
-            'all_items'         => __( 'Todas CAtegorias', 'textdomain' ),
-            'view_item'         => __( 'Ver Categoria', 'textdomain' ),
-            'parent_item'       => __( 'Categoria Pai', 'textdomain' ),
-            'parent_item_colon' => __( 'Categoria Pai:', 'textdomain' ),
-            'edit_item'         => __( 'Editar Categoria', 'textdomain' ),
-            'update_item'       => __( 'Atualizar Categoria', 'textdomain' ),
-            'add_new_item'      => __( 'Adicionar Categorias', 'textdomain' ),
-            'menu_name'         => __( 'Categorias', 'textdomain' ),
-        );
 
-        $args = array(
-            'labels'            => $labels,
-            'hierarchical'      => true,
-            'public'            => true,
-            'show_ui'           => true,
-            'show_admin_column' => true,
-            'query_var'         => true,
-            'rewrite'           => array( 'slug' => 'categoria' ),
-            'show_in_rest'      => true,
-        );
-        register_taxonomy( 'categoria', 'imagem', $args );
-    } 
+// function type_imagem_taxonomy() {
 
-    add_action( 'init', 'type_imagem_taxonomy', 0 );
+//         $labels = array(
+//             'name'              => _x( 'Categorias', 'taxonomy general name', 'textdomain' ),
+//             'singular_name'     => _x( 'Categoria', 'taxonomy singular name', 'textdomain' ),
+//             'search_items'      => __( 'Procurar Categoria', 'textdomain' ),
+//             'all_items'         => __( 'Todas CAtegorias', 'textdomain' ),
+//             'view_item'         => __( 'Ver Categoria', 'textdomain' ),
+//             'parent_item'       => __( 'Categoria Pai', 'textdomain' ),
+//             'parent_item_colon' => __( 'Categoria Pai:', 'textdomain' ),
+//             'edit_item'         => __( 'Editar Categoria', 'textdomain' ),
+//             'update_item'       => __( 'Atualizar Categoria', 'textdomain' ),
+//             'add_new_item'      => __( 'Adicionar Categorias', 'textdomain' ),
+//             'menu_name'         => __( 'Categorias', 'textdomain' ),
+//         );
+
+//         $args = array(
+//             'labels'            => $labels,
+//             'hierarchical'      => true,
+//             'public'            => true,
+//             'show_ui'           => true,
+//             'show_admin_column' => true,
+//             'query_var'         => true,
+//             'rewrite'           => array( 'slug' => 'categoria' ),
+//             'show_in_rest'      => true,
+//         );
+//         register_taxonomy( 'categoria', 'imagem', $args );
+//     } 
+
+//     add_action( 'init', 'type_imagem_taxonomy', 0 );
 
 
 
