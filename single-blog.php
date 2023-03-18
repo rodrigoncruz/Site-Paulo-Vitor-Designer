@@ -28,16 +28,43 @@ get_header(); ?>
             </div>
             <div class="mt-5">
               <p><strong>Crédito</strong></p>
+              <ul class="credito">
+                <a href="<?php echo get_field('credito')['url'] ?>"><li style="list-style: disc; margin-left: 40px"><?php echo get_field('credito')['title'] ?></li></a>
+              </ul>
+              <div class="tag">
                 <?php
                   if ( has_tag() ):
                   echo 'Tags: ';
                   echo get_the_tag_list( '', ', ', '' );
                   endif;
-              ?>
+                ?>
+              </div>
+              <div class="mt-5">
+              <p><strong>Compartilhe:</strong></p>
+              <div class="bnt-icons-mobile d-flex">
+                  <ul class="d-flex nav-icon mb-0">
+                      <?php if (have_rows('redes_sociais_artigos','option')): while (have_rows('redes_sociais_artigos','option')) : the_row();
+                          $logotipo_rodape = get_sub_field('logotipo_rodape');
+                          $link_rede_rodape = get_sub_field('link_rodape'); ?>
+                              <li>
+                                  <a href=<?php echo $link_rede_rodape ?>><img src=<?php echo $logotipo_rodape ?> alt=""></a>
+                              </li>
+                      <?php endwhile; endif; ?>
+                  </ul>
+              </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <div>
+                    <?php
+                      if ( comments_open() || get_comments_number() ) {
+                        comments_template();
+                      }
+                    ?>
+                  </div>
+
       <section class="bg-light">
           <div class="slick-carousel-single-blog container ">
 

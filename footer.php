@@ -22,24 +22,10 @@
           <div class="title-forms">
             <h2>Para falar sobre seu projetos ou parceria, preencha  o formulário a baixo.</h2>
           </div>
-          <form>
-              <label>
-                  <input type="text" name="name" placeholder="Nome Sobrenome" required>
-              </label>
-              <label>
-                  <input type="email" name="email" placeholder="seuemail@gmail.com" required>
-              </label>
-              <label>
-                  <input type="tel" name="phone" placeholder="Telefone" required>
-              </label>
-              <label>
-                  <input type="text" name="subject" placeholder="Assunto" required>
-              </label>
-              <label>
-                  <textarea name="message" placeholder="Conte, como posso te ajudar?" required></textarea>
-              </label>
-            <input type="submit" value="Enviar">
-          </form>
+          
+          <!-- Formulário Contat Forms -->
+          <?php echo get_field('formulario','options');?>
+
           <div class="bnt-icons-mobile d-flex d-block d-lg-none">
                   <ul class="d-flex nav-icon mb-0">
                       <?php if (have_rows('redes_sociais_rodape','options')): while (have_rows('redes_sociais_rodape','options')) : the_row();

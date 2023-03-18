@@ -87,6 +87,14 @@ if ( function_exists('acf_add_options_page') ) {
         'capability'    => 'edit_posts',
         'redirect'      => false
     ]);
+
+    acf_add_options_page([
+        'page_title'    => 'Redes Sociais Artigos',
+        'menu_title'    => 'Redes Sociais Artigos',
+        'menu_slug'     => 'redes-sociais-artigos',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ]);
 }
 
 
@@ -174,3 +182,6 @@ Custom Post Type / Taxonomy / Imagem
         return $single_template;
     }
     add_filter( 'single_template', 'custom_category_single_template' );
+
+
+    add_filter( 'wpcf7_validate_configuration', '__return_false' );

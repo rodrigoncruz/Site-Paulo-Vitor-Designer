@@ -1,6 +1,6 @@
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: -20px;
 }
 
 .title-forms {
@@ -9,8 +9,26 @@ label {
         font-size: 15px;
         line-height: 20px;
         font-weight: 500;
-        margin-bottom: 14px;
+        margin-bottom: -28px;
     }
+}
+
+.wpcf7-form {
+    p {
+        padding: 0;
+    }
+
+    label {
+        margin-top: -10px;
+    }
+}
+
+.wpcf7-submit {
+    margin-top: 12px;
+}
+
+.wpcf7-not-valid-tip {
+    color: #c58205 !important;
 }
 
 input[type="text"],

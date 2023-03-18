@@ -36,7 +36,32 @@
             }
         }
 
+        .tag {
+            a {
+                color: $color-black;
+                font-weight: 700;
+            }
+        }
 
+        .credito {
+            a {
+                color: $color-black;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+        }
+
+        .bnt-icons-mobile li {
+            margin-left: 0px;
+        
+            &:not(:first-child) {
+                padding-left: 35px;
+            }
+        }
+
+        .slick-dots {
+            display: none;;
+        }
     }
 
     .carrossel {
@@ -192,7 +217,6 @@
         }
 
     }
-
 
 
     .nav-banner {
