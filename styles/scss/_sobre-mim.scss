@@ -37,9 +37,8 @@
 
     .about {
         margin-left: 84px;
-        padding-top: 70px;
-        padding-bottom: 48px;
-        
+        padding-top: 73px;
+        padding-bottom: 57px;        
 
         @media(max-width: 600px) {
             margin-left: 40px;
@@ -166,12 +165,13 @@
             }
 
             p {
-                font-size: 20px;
-                line-height: 42px;
+                font-size: 18px;
+                line-height: 35px;
                 padding-left: 58px;
                 padding-bottom: 70px;
                 color: $color-white;
                 margin-bottom: 0;
+                max-width: 950px;
 
                 @media(max-width: 600px ) {
                     font-size: 16px;

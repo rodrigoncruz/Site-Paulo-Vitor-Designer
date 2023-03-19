@@ -10,17 +10,17 @@ get_header(); ?>
     <div class="nav-banner">
         <img class="img-banner position-relative" src=<?php the_field('banner_sobre_mim'); ?> alt="Banner">
     </div>
-    <section class="row">
+    <section class="row bg-blue">
         <div class="col-md-6 col-12">
           <img class="img-paulo" src=<?php the_field('foto_paulo_vitor');?> alt="Foto do Designer Paulo Vitor">
         </div>
-        <div class="col-md-6 col-12 bg-blue">
+        <div class="col-md-6 col-12">
           <div class="about">
           <?php if (have_rows('quem_e_paulo_vitor')): while (have_rows('quem_e_paulo_vitor')) : the_row(); 
               $titulo = get_sub_field('titulo_sobre_paulo');
               $descricao = get_sub_field('descricao_sobre_paulo');?>
               <h2 class="title"><?php echo $titulo ?></h2>
-              <p class="pb-5"><?php echo $descricao ?></p>
+              <p><?php echo $descricao ?></p>
           <?php endwhile; endif; ?>
           </div>
         </div>

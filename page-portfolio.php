@@ -21,7 +21,7 @@ get_header(); ?>
         </div>
     </div>
 
-    <section class="row">
+    <section class="row align-items-center">
       <?php $count = 0 ?>
     <?php if (have_rows('empresas')): while (have_rows('empresas')) : the_row();
             $count++;
