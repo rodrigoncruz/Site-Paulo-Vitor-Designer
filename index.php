@@ -5,7 +5,7 @@
 
 get_header(); ?>
   <main class="blog">
-    <div class="nav-banner-blog">
+    <div class="nav-banner-blog align-items-center">
         <img class="img-banner position-relative" src=<?php the_field('banner_blog'); ?> alt="Banner Blog">
         <div class="container d-flex justify-content-center align-items-center">
             <div  class="position-absolute text-banner">
@@ -30,7 +30,7 @@ get_header(); ?>
                 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
                 <section class=" row align-items-center pt-5 pb-5">
-                    <div class="bg-white col-lg-6">
+                    <div style="border-radius: 6px 0px 0px 6px;" class="bg-white col-lg-6">
                       <div class="about-par">
                         <h2 class="title "><?php the_title(); ?></h2>
                         <p><?php the_excerpt( ); ?></p>
@@ -73,7 +73,7 @@ get_header(); ?>
                           <div class="">
                             <a href=<?php the_permalink(); ?>><img class="img-posts" src=<?php the_post_thumbnail();?></a>
                           </div>
-                          <div class="bg-white card-text">
+                          <div style="border-radius: 0px 0px 6px 6px;" class="bg-white card-text">
                             <div class="about-par-posts">
                               <h2 class="title"><?php the_title(); ?></h2>
                               <p><?php the_excerpt(20); ?></p>
