@@ -58,12 +58,13 @@ get_header(); ?>
         </div>
       </section>
       <div>
-                    <?php
-                      if ( comments_open() || get_comments_number() ) {
-                        comments_template();
-                      }
-                    ?>
-                  </div>
+        
+        <?php
+          if ( comments_open() || get_comments_number() ) {
+            comments_template();
+          }
+        ?>
+      </div>
 
       <section class="bg-light">
           <div class="slick-carousel-single-blog container ">

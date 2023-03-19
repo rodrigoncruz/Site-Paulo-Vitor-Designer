@@ -19,11 +19,11 @@ get_header(); ?>
         </div>
     </div>
 
-    <section class="row">
+    <section class="row bg-blue align-items-center">
       <div class="col-md-6 col-12"  id="sobre">
         <img class="img-paulo" src=<?php the_field('foto');?> alt="Foto do Designer Paulo Vitor">
       </div>
-      <div class="col-md-6 col-12 bg-blue">
+      <div class="col-md-6 col-12">
         <div class="about">
           <h2 class="title "><?php the_field('titulo_paulo');?></h2>
           <p><?php the_field('apresentacao_paragrafo_01');?></p>
