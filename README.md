@@ -1,7 +1,7 @@
 # Site Paulo Vitor by Rodrigo Cruz
 https://www.linkedin.com/in/rodrigonascimentocruz/
 
-#Tecnologias usadas:
+#Tecnologias usadas para criação do tema:
 
 html,
 sass,
