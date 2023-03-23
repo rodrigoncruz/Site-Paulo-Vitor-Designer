@@ -1,14 +1,14 @@
-# Site Paulo Vitor
+# Site Paulo Vitor by Rodrigo Cruz
+https://www.linkedin.com/in/rodrigonascimentocruz/
 
 #Tecnologias usadas:
 
 html,
 sass,
-css,
 gulp,
 php,
+javascript
 wordpress,
 bootstrap,
 
-![](/assets/img/img01.png)
-![](/assets/img/img02.png)
+![](/assets/img/print.png)
