@@ -67,7 +67,7 @@ get_header(); ?>
                   $query = new WP_Query( $args ); ?>
 
                   
-                  <section class="row">
+                  <section class="row container-blog">
                         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
                         <div class="pt-5 pb-5 col-lg-4">
                           <div class="">

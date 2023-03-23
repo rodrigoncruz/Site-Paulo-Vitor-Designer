@@ -34,11 +34,11 @@ get_header(); ?>
 
           <?php if ($count % 2 == 1 ) : ?>
           <div class="col-md-6 col-12">
-            <img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>">
+            <a href="<?php echo $link ?>"><img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>"></a>
           </div>
           <div class="col-md-6 col-12">
             <div class="about">
-              <h2 class="title "><?php echo $titulo ?></h2>
+             <h2 class="title "><?php echo $titulo ?></h2>
               <p><?php echo $descricao ?></p>
               <a href=<?php echo $link ?>><img class="mt-0 seta-empresas" src=<?php echo get_template_directory_uri() . '/assets/img/seta_empresas_es.svg' ?>><?php echo $texto_bnt ?></a>
             </div>
@@ -47,7 +47,7 @@ get_header(); ?>
           <?php else : ?>
 
             <div class="col-md-6 col-12 d-block d-lg-none">
-              <img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>">
+            <a href="<?php echo $link ?>"><img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>"></a>
             </div>
             <div class="col-md-6 col-12">
               <div class="about-par">
@@ -57,7 +57,7 @@ get_header(); ?>
               </div>
             </div>
             <div class="col-md-6 col-12 d-none d-lg-block">
-              <img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>">
+            <a href="<?php echo $link ?>"><img class="img" src=<?php echo $imagem ?> alt="<?php echo $alt ?>"></a>
             </div>
           <?php endif; ?>
       <?php endwhile; endif; ?>

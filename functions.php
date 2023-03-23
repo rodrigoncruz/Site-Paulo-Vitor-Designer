@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 function my_custom_scripts() {
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'menu-transparente', get_template_directory_uri() . '/assets/js/menu.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'slick-carousel', get_template_directory_uri() . '/assets/js/slick-carousel.js', array( 'jquery', 'slick-js' ), '1.0', true );
     wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/js/slick.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/assets/js/slick-theme.css', array(), '1.0', 'all' );

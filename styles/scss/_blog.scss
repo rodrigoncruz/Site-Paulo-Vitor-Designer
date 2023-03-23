@@ -189,7 +189,20 @@
         
     }
 
+    
 }
+
+.container-blog {
+    width: 1170px;
+  }
+  
+  @media (max-width: 981px) {
+    .container-blog {
+      width: auto;
+    }
+  }
+  
+  
 
     .nav-banner-blog {
         img {

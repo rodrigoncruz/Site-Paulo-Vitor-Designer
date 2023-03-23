@@ -1,5 +1,9 @@
 @import 'variables';
 
+.menu-menu-footer-container {
+    margin-right: 15px;
+}
+
 .mobile-menu-custom-button {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -9,6 +13,9 @@
     margin-top: 10px;
 }
 
+.nav.transparent {
+    opacity: 90%;
+}
 
 
 .menu-footer .menu {
@@ -39,6 +46,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 5;
+        transition: opacity 0.5s ease-in-out;
+        
     
         .logo {
             padding-right: 72px;
@@ -157,6 +166,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 5;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -275,6 +286,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -343,6 +356,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -409,6 +424,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -475,6 +492,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -541,6 +560,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -607,6 +628,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -673,6 +696,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;
@@ -739,6 +764,8 @@
         background-color: $color-gray;
         position: fixed;
         z-index: 10;
+        transition: opacity 0.5s ease-in-out;
+
     
         .logo {
             padding-right: 72px;

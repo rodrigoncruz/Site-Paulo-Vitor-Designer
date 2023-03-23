@@ -9,22 +9,17 @@
     <?php endif; ?>
 </div>
 <div class="d-none d-sm-block">
-    <?php if(is_page('perguntas')):
+    <?php if(is_page('perguntas') || is_page('sobre-mim') || is_page('portifolio') || is_page('blog') || is_single() || is_404()):
         wp_nav_menu(
             array(
-                'theme_location'    => 'secundary_menu',
+                'theme_location'    => 'tertiary_menu',
                 'depth'             => 1
                 )
             ); 
-    elseif(is_page('sobre-mim') || is_page('portifolio') || is_page('blog') || is_single() || is_404() ):
-        wp_nav_menu(
-            array(
-                'theme_location' => 'tertiary_menu',
-                'depth' => 1
-                )
-            ); 
 
-    else:
+    ?>
+
+   <?php else: 
         wp_nav_menu(
             array(
                 'theme_location' => 'primary_menu',
@@ -32,7 +27,10 @@
                 )
             ); 
     endif; ?>
+    
 </div>
+
+<!-- Plugin Mobile-->
 
 <div class="d-block d-sm-none">
     <?php

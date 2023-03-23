@@ -39,9 +39,12 @@ get_header(); ?>
         </div>
       </div>
       <?php endwhile; endif; ?>
-      <p>Fico feliz que meu trabalho tenha lhe despertado interesse. Caso tenha alguma dúvida<br> específica, entre em contato.<br><br>
+      <hr class="px-0 py-sm-0 px-lg-0 col-md-9 col-12 mb-5">
+
+    <p class="mb-5">Fico feliz que meu trabalho tenha lhe despertado interesse. Caso tenha alguma dúvida<br> específica, entre em contato.<br><br>
         Muito obrigado, um forte abraço e sucesso!
     </p>
+
     </section>
   </main>
 <?php get_footer(); ?>

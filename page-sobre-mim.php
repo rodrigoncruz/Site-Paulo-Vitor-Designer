@@ -51,7 +51,7 @@ get_header(); ?>
           $titulo = get_sub_field('dados');
           $descricao = get_sub_field('descricao');?>
           <li>
-          <div class="text-left pt-5 pb-5 d-lg-flex">
+          <div class="text-left pt-5 pb-5 d-lg-flex align-items-end">
             <h4><?php echo $titulo ?></h4>
             <h5><?php echo $descricao ?></h5>
           </div>
