@@ -20,10 +20,10 @@ get_header(); ?>
     </div>
 
     <section class="row bg-blue align-items-center">
-      <div class="col-md-6 col-12"  id="sobre">
+      <div class="col-lg-6 col-12"  id="sobre">
         <img class="img-paulo" src=<?php the_field('foto');?> alt="Foto do Designer Paulo Vitor">
       </div>
-      <div class="col-md-6 col-12">
+      <div class="col-lg-6 col-12">
         <div class="about">
           <h2 class="title "><?php the_field('titulo_paulo');?></h2>
           <p><?php the_field('apresentacao_paragrafo_01');?></p>
@@ -39,7 +39,14 @@ get_header(); ?>
               $imagem = get_sub_field('imagem_empresas');
               $link = get_sub_field('link_empresas'); 
               $alt = get_sub_field('alt_empresas'); ?>
-                <div class="col-md-4"><a href=<?php  echo $link ?>><img class="img-paulo" src= <?php  echo $imagem ?> alt=<?php $alt ?>></a></div>
+            <div class="col-lg-4">
+              <div class="img-paulo-wrapper">
+                <a href="<?php echo $link ?>">
+                  <img class="img-paulo" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>">
+                  <p class="text-paulo"><?php echo $alt ?></p>
+                </a>
+              </div>
+            </div>
           <?php endwhile; endif; ?>
         </section>
       </div>

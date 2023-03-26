@@ -1,16 +1,50 @@
 @import 'variables';
 
 .portifolio {
-
-    .img {
+    /* Texto na imagem  com efeito**/
+    .img-wrapper {
+        position: relative;
         width: 100%;
         height: 621px;
-        object-fit:cover;
-
+        object-fit: cover;
+        transition: .5s ease-in;
+      
         @media(max-width: 418px) {
-            height: 100%;
+          height: 100%;
         }
-    }
+      
+        &:hover .text-hover {
+          opacity: 1;
+        }
+      
+        &:hover .img {
+          filter: brightness(20%);
+        }
+      }
+      
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s ease-in;
+      }
+      
+      .text-hover {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity .5s ease-in;
+      }
+
+        /* fim**/
 
     .title {
         color: $color-black;
