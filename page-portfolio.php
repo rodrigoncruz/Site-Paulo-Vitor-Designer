@@ -26,6 +26,7 @@ get_header(); ?>
     <?php if (have_rows('empresas')): while (have_rows('empresas')) : the_row();
             $count++;
             $imagem = get_sub_field('imagem');
+            $imagem_hover = get_sub_field('imagem_hover');
             $titulo = get_sub_field('titulo_empresa');
             $descricao = get_sub_field('descricao_empresa');  
             $alt = get_sub_field('alt_empresa_portifolio');
@@ -36,6 +37,7 @@ get_header(); ?>
             <div class="col-md-6 col-12 position-relative">
               <div class="img-wrapper">
                 <a href="<?php echo $link ?>"><img class="img" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>"></a>
+                <a href="<?php echo $link ?>"><img class="img-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>"></a>
                 <div class="text-wrapper">
                   <a href="<?php echo $link ?>"><p class="text-hover"><?php echo $alt ?></p></a>
                 </div>
@@ -43,7 +45,7 @@ get_header(); ?>
             </div>
           <div class="col-md-6 col-12">
             <div class="about">
-             <h2 class="title "><?php echo $titulo ?></h2>
+              <a href="<?php echo $link ?>"><h2 class="title"><?php echo $titulo ?></h2></a>
               <p><?php echo $descricao ?></p>
               <a href=<?php echo $link ?>><img class="mt-0 seta-empresas" src=<?php echo get_template_directory_uri() . '/assets/img/seta_empresas_es.svg' ?>><?php echo $texto_bnt ?></a>
             </div>
@@ -54,6 +56,7 @@ get_header(); ?>
             <div class="col-md-6 col-12 position-relative d-block d-lg-none">
               <div class="img-wrapper">
                 <a href="<?php echo $link ?>"><img class="img" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>"></a>
+                <a href="<?php echo $link ?>"><img class="img-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>"></a>
                 <div class="text-wrapper">
                   <a href="<?php echo $link ?>"><p class="text-hover"><?php echo $alt ?></p></a>
                 </div>
@@ -61,14 +64,15 @@ get_header(); ?>
             </div>
             <div class="col-md-6 col-12">
               <div class="about-par">
-                <h2 class="title "><?php echo $titulo ?></h2>
+                <a href="<?php echo $link ?>"><h2 class="title "><?php echo $titulo ?></h2></a>
                 <p><?php echo $descricao ?></p>
-                <a href=<?php echo $link ?>><?php echo $texto_bnt ?><img class="mt-0 seta-oposta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>></a>
+                <a href="<?php echo $link ?>"><?php echo $texto_bnt ?><img class="mt-0 seta-oposta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>></a>
               </div>
             </div>
             <div class="col-md-6 col-12 position-relative d-none d-lg-block">
               <div class="img-wrapper">
                 <a href="<?php echo $link ?>"><img class="img" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>"></a>
+                <a href="<?php echo $link ?>"><img class="img-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>"></a>
                 <div class="text-wrapper">
                   <a href="<?php echo $link ?>"><p class="text-hover"><?php echo $alt ?></p></a>
                 </div>

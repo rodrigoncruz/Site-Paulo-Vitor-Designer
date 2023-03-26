@@ -37,12 +37,14 @@ get_header(); ?>
         <section class="row overlay">
           <?php if (have_rows('logos')): while (have_rows('logos')) : the_row();
               $imagem = get_sub_field('imagem_empresas');
+              $imagem_hover = get_sub_field('imagem_empresas_hover');
               $link = get_sub_field('link_empresas'); 
               $alt = get_sub_field('alt_empresas'); ?>
             <div class="col-lg-4">
               <div class="img-paulo-wrapper">
                 <a href="<?php echo $link ?>">
                   <img class="img-paulo" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>">
+                  <img class="img-paulo-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>">
                   <p class="text-paulo"><?php echo $alt ?></p>
                 </a>
               </div>

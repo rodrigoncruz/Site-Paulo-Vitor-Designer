@@ -190,9 +190,9 @@
           
           .img-paulo {
             width: 100%;
-            height: 609px;
+            height: 610px;
             object-fit: cover;
-            transition: .5s ease-in;
+            transition: .5s all;
           
             @media(max-width: 767px) {
               height: 390px;
@@ -201,6 +201,32 @@
           
           .img-paulo:hover {
             filter: brightness(20%);
+          }
+          
+          .img-paulo-hover {
+            width: 100%;
+            height: 610px;
+            object-fit: cover;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .5s all;
+            filter: brightness(50%);
+          
+            @media(max-width: 767px) {
+              height: 390px;
+            }
+          }
+          
+          .img-paulo-wrapper:hover .img-paulo {
+            opacity: 0;
+            transition: .5s all;
+          }
+          
+          .img-paulo-wrapper:hover .img-paulo-hover {
+            opacity: 1;
+            transition: .5s all;
           }
           
           .text-paulo {
@@ -215,7 +241,7 @@
             text-align: center;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
             opacity: 0;
-            transition: opacity .5s ease-in;
+            transition: .5s all;
           }
           
           .img-paulo-wrapper:hover .text-paulo {
@@ -225,6 +251,7 @@
           .img-paulo-wrapper:hover .img-paulo {
             filter: brightness(20%);
           }
+          
     }
 
     .card {
