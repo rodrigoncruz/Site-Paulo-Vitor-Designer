@@ -37,6 +37,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
+        <!-- <hr class="hr"> -->
       </div>
       <?php endwhile; endif; ?>
       <hr class="px-0 py-sm-0 px-lg-0 col-lg-9 col-12 mb-5">

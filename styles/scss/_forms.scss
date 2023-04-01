@@ -42,6 +42,7 @@ input[type="email"]
     border-radius: 6px;
     padding: 8px 0 8px 12px;
     padding-left: 12px;
+    padding-top: 10px;
 
 input[type="text"]::placeholder {
     text-indent: 12px;
@@ -54,6 +55,7 @@ textarea {
     transition: border-color 0.3s ease-in-out;
     border-radius: 6px;
     padding-left: 12px;
+    padding-top: 10px;
 }
 
 input:focus, textarea:focus {
