@@ -34,7 +34,7 @@ get_header(); ?>
             $texto_bnt = get_sub_field('texto_botao_empresas'); ?>
 
           <?php if ($count % 2 == 1 ) : ?>
-            <div class="col-md-6 col-12 position-relative">
+            <div class="col-lg-6 col-12 position-relative">
               <div class="img-wrapper">
                 <a href="<?php echo $link ?>"><img class="img" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>"></a>
                 <a href="<?php echo $link ?>"><img class="img-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>"></a>
@@ -43,7 +43,7 @@ get_header(); ?>
                 </div>
               </div>
             </div>
-          <div class="col-md-6 col-12">
+          <div class="col-lg-6 col-12">
             <div class="about">
               <a href="<?php echo $link ?>"><h2 class="title"><?php echo $titulo ?></h2></a>
               <p><?php echo $descricao ?></p>
@@ -53,7 +53,7 @@ get_header(); ?>
 
           <?php else : ?>
 
-            <div class="col-md-6 col-12 position-relative d-block d-lg-none">
+            <div class="col-lg-6 col-12 position-relative d-block d-lg-none">
               <div class="img-wrapper">
                 <a href="<?php echo $link ?>"><img class="img" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>"></a>
                 <a href="<?php echo $link ?>"><img class="img-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>"></a>
@@ -62,14 +62,14 @@ get_header(); ?>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-lg-6 col-12">
               <div class="about-par">
                 <a href="<?php echo $link ?>"><h2 class="title "><?php echo $titulo ?></h2></a>
                 <p><?php echo $descricao ?></p>
                 <a href="<?php echo $link ?>"><?php echo $texto_bnt ?><img class="mt-0 seta-oposta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>></a>
               </div>
             </div>
-            <div class="col-md-6 col-12 position-relative d-none d-lg-block">
+            <div class="col-lg-6 col-12 position-relative d-none d-lg-block">
               <div class="img-wrapper">
                 <a href="<?php echo $link ?>"><img class="img" src="<?php echo $imagem ?>" alt="<?php echo $alt ?>"></a>
                 <a href="<?php echo $link ?>"><img class="img-hover" src="<?php echo $imagem_hover ?>" alt="<?php echo $alt ?>"></a>

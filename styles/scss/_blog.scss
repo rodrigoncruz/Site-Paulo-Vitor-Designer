@@ -99,7 +99,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 6px 0px 0px 6px;
+            border-radius: 6px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: $color-blue-hover;
+            }
 
 
             @media(max-width: 418px) {
@@ -170,7 +175,12 @@
         margin-top: 10px;
         justify-content: center;
         align-items: center;
-        border-radius: 6px 0px 0px 6px;
+        border-radius: 6px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $color-blue-hover;
+        }
 
 
         @media(max-width: 418px) {
@@ -226,7 +236,7 @@
     
         div {
     
-            top: 260px;
+            // top: 260px;
     
             @media(max-width: 1263px) {
                 top: 200px;

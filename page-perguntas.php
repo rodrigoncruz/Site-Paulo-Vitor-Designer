@@ -22,7 +22,7 @@ get_header(); ?>
           <h2 class="pb-2 pt-5 titulo"><?php echo $titulo_acordion ?></h2>
       <?php endwhile; endif; ?>
 
-      <div class="px-0 py-sm-0 px-lg-0 col-md-9 col-12">
+      <div class="px-0 py-sm-0 px-lg-0 col-lg-9 col-12">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading<?php echo $informacoes['acordion']; ?>">
@@ -39,7 +39,7 @@ get_header(); ?>
         </div>
       </div>
       <?php endwhile; endif; ?>
-      <hr class="px-0 py-sm-0 px-lg-0 col-md-9 col-12 mb-5">
+      <hr class="px-0 py-sm-0 px-lg-0 col-lg-9 col-12 mb-5">
 
     <p class="mb-5">Fico feliz que meu trabalho tenha lhe despertado interesse. Caso tenha alguma dúvida<br> específica, entre em contato.<br><br>
         Muito obrigado, um forte abraço e sucesso!

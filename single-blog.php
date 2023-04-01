@@ -6,8 +6,8 @@
 get_header(); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <main class="single">
-      <section class="nav-banner-single-blog">
-          <img class="img-banner position-relative" src=<?php the_post_thumbnail();?>
+      <section class="nav-banner-single-blog position-relative">
+          <img class="img-banner" src=<?php the_post_thumbnail();?>
           <div class="container d-flex justify-content-center align-items-center">
               <div  class="position-absolute text-banner container">
                 <h1><?php the_title(); ?></h1>
@@ -16,7 +16,7 @@ get_header(); ?>
       </section>
       <section class="row">
         <div class="container content px-3">
-          <div class="col-md-10">
+          <div class="col-lg-10">
             <div class="mb-5">
               <h2 class="title-single-blog"><?php the_title();?></h2>
             </div>

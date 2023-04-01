@@ -11,10 +11,10 @@ get_header(); ?>
         <img class="img-banner position-relative" src=<?php the_field('banner_sobre_mim'); ?> alt="Banner">
     </div>
     <section class="row bg-blue">
-        <div class="col-md-6 col-12">
+        <div class="col-lg-6 col-12">
           <img class="img-paulo" src=<?php the_field('foto_paulo_vitor');?> alt="Foto do Designer Paulo Vitor">
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-lg-6 col-12">
           <div class="about">
           <?php if (have_rows('quem_e_paulo_vitor')): while (have_rows('quem_e_paulo_vitor')) : the_row(); 
               $titulo = get_sub_field('titulo_sobre_paulo');
@@ -27,8 +27,8 @@ get_header(); ?>
       </section>
       <section class="bg-slogan">
         <div class="container">
-          <h2 class="col-md-10 col-12"><?php the_field('titulo_metodologia_e_processo'); ?></h2>
-          <p class="col-md-10 col-12"><?php the_field('sub_metodologia_e_processo'); ?></p>
+          <h2 class="col-lg-10 col-12"><?php the_field('titulo_metodologia_e_processo'); ?></h2>
+          <p class="col-lg-10 col-12"><?php the_field('sub_metodologia_e_processo'); ?></p>
         </div>
       </section>
       <div class="bg-black">

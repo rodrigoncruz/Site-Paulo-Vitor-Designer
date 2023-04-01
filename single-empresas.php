@@ -11,14 +11,14 @@ get_header(); ?>
     <div class="row">
       <?php if(!get_the_content() == ''): ?>
         <div class="container content px-3">
-          <div class="col-md-10">
+          <div class="col-lg-10">
               <?php the_content(); ?>
             </div>
           </div>
         </div>
         <?php else: ?>
           <div class="container px-3">
-          <div class="col-md-10">
+          <div class="col-lg-10">
             </div>
           </div>
         </div>

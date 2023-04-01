@@ -4,7 +4,7 @@
 
     .bnt-icons li {
         margin-left: 0px;
-        margin-top: 103px;
+        margin-top: 148px;
         margin-bottom: 80px;
     
         &:not(:first-child) {
@@ -38,7 +38,6 @@
         font-weight: 800;
         font-size: 18px;
         line-height: 22px;
-        padding-top: 50px;
     }
 
     span {
@@ -54,13 +53,19 @@
         font-size: 14px;
         justify-content: center;
         align-items: center;
+        display: inline-block;
         border-radius: 10px;
+        margin-top: 21px;
+        margin-bottom: 35px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $color-green-hover;
+        }
 
     
         @media(max-width: 418px) {
             font-size: 12px;
-            width: 100px;
-            height: 35px;
             margin-top: 20px;
         }
 
@@ -68,8 +73,8 @@
             margin-bottom: 150px;
         }
 
-        @media(max-width: 481px) {
-            margin-bottom: 50px;
+        @media(max-width: 763px) {
+            margin-bottom: 0;
         }
 
         
@@ -107,3 +112,26 @@
     }
 }
 
+.title-zap {
+    color: $color-white;
+    .principal-zap {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        max-width: 294px;
+        width: 100%;
+        margin-top: 118px;
+    }
+
+    .sub-zap {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+        max-width: 335px;
+        width: 100%;
+
+        @media(max-width: 763px) {
+            font-size: 18px;
+        }
+    }
+}

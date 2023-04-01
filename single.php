@@ -10,7 +10,7 @@ get_header(); ?>
     </div>
     <div class="row">
       <div class="container content px-3">
-        <div class="col-md-10">
+        <div class="col-lg-10">
           <?php the_content();?>
         </div>
       </div>
