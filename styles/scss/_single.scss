@@ -347,15 +347,8 @@
 
     }
 
-    .comments {
-        p {
-            font-weight: 500;
-            font-size: 11px !important;
-            line-height: 24px;
-            color: $color-gray-dark;
-            margin-bottom: 0;
-            margin-left: 5px;
-        }
+    #wpdcom {
+        padding: 22px;
     }
 
     .about-par-posts {
@@ -397,7 +390,12 @@
         margin-top: 10px;
         justify-content: center;
         align-items: center;
-        border-radius: 6px 0px 0px 6px;
+        border-radius: 6px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $color-blue-hover;
+        }
 
 
         @media(max-width: 418px) {
