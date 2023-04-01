@@ -5,10 +5,10 @@
 
 get_header(); ?>
   <main class="blog">
-    <div class="nav-banner-blog align-items-center">
-        <img class="img-banner position-relative" src=<?php the_field('banner_blog'); ?> alt="Banner Blog">
+    <div class="nav-banner-blog align-items-center position-relative">
+        <img class="img-banner" src=<?php the_field('banner_blog'); ?> alt="Banner Blog">
         <div class="container d-flex justify-content-center align-items-center">
-            <div  class="position-absolute text-banner">
+            <div  class="text-banner-blog">
                 <h1>
                     <?php the_field('titulo_banner_blog'); ?>
                 </h1>

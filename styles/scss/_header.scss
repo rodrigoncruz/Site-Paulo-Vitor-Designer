@@ -195,3 +195,12 @@
         }
     }
 }
+
+.text-banner-blog {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+}
