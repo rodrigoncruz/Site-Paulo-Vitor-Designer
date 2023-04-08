@@ -76,8 +76,36 @@
         li {
             margin-left: 0px;
 
-            &:not(:first-child) {
-                padding-left: 72px;
+            .page-template-page-perguntas &:not(:first-child) {
+                padding-left: 98px;
+            }
+
+            .home &:not(:first-child) {
+                padding-left: 84px;
+            }
+
+            .page-template-index &:not(:first-child) {
+                padding-left: 68px;
+            }
+
+            .page-template-page-portfolio &:not(:first-child) {
+                padding-left: 73px;
+            }
+
+            .single &:not(:first-child) {
+                padding-left: 44px;
+            }
+
+            .page-template-page-politica &:not(:first-child) {
+                padding-left: 44px;
+            }
+
+            .page-template-page-sobre-mim &:not(:first-child) {
+                padding-left: 73px;
+            }
+
+            .error404 &:not(:first-child) {
+                padding-left: 73px;
             }
 
             a {
@@ -202,5 +230,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 40px;
 }

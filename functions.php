@@ -23,6 +23,7 @@ function my_custom_scripts() {
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'menu-transparente', get_template_directory_uri() . '/assets/js/menu.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'slick-carousel', get_template_directory_uri() . '/assets/js/slick-carousel.js', array( 'jquery', 'slick-js' ), '1.0', true );
+    wp_enqueue_script( 'portifólio', get_template_directory_uri() . '/assets/js/portifolio.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/js/slick.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/assets/js/slick-theme.css', array(), '1.0', 'all' );
   }
@@ -39,16 +40,22 @@ function ceaf_config() {
 
     register_nav_menus(
         array(
-            'primary_menu' => 'Primary Menu',
-            'secundary_menu' => 'Secundary Menu',
-            'tertiary_menu' => 'Tertiary Menu',
-            'footer_menu' => 'Footer Menu'
+            'menu_home' => 'Menu Home',
+            'menu_blog' => 'Menu Blog',
+            'menu_portfolio' => 'Menu Portifólio',
+            'menu_perguntas' => 'Menu Perguntas',
+            'menu_politica' => 'Menu Política',
+            'menu_artigo' => 'Menu Artigo',
+            'menu_quem_sou' => 'Menu Quem Sou'
         )
     );
 
     add_theme_support( 'title-tag' );
     
-    add_theme_support( 'custom-logo');
+    add_theme_support( 'custom-logo', [
+        'height' => 44,
+		'width'  => 44,
+    ]);
 
     add_theme_support( 'post-thumbnails' );
 }

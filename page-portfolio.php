@@ -47,7 +47,7 @@ get_header(); ?>
             <div class="about">
               <a href="<?php echo $link ?>"><h2 class="title"><?php echo $titulo ?></h2></a>
               <p><?php echo $descricao ?></p>
-              <a href=<?php echo $link ?>><img class="mt-0 seta-empresas" src=<?php echo get_template_directory_uri() . '/assets/img/seta_empresas_es.svg' ?>><?php echo $texto_bnt ?></a>
+              <a class="js-bnt" href=<?php echo $link ?>><img class="mt-0 seta-empresas" src=<?php echo get_template_directory_uri() . '/assets/img/seta_empresas_es.svg' ?>><?php echo $texto_bnt ?></a>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ get_header(); ?>
               <div class="about-par">
                 <a href="<?php echo $link ?>"><h2 class="title "><?php echo $titulo ?></h2></a>
                 <p><?php echo $descricao ?></p>
-                <a href="<?php echo $link ?>"><?php echo $texto_bnt ?><img class="mt-0 seta-oposta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>></a>
+                <a class="js-bnt" href="<?php echo $link ?>"><?php echo $texto_bnt ?><img class="mt-0 seta-oposta" src=<?php echo get_template_directory_uri() . '/assets/img/seta-portifolio.svg' ?>></a>
               </div>
             </div>
             <div class="col-lg-6 col-12 position-relative d-none d-lg-block">
