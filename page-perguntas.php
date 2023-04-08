@@ -17,9 +17,10 @@ get_header(); ?>
     <?php if (have_rows('perguntas_e_respostas')): while (have_rows('perguntas_e_respostas')) : the_row(); ?>
         <?php $informacoes = get_sub_field('informacoes');?>
 
-      <?php if (have_rows('titulo')): while (have_rows('titulo')) : the_row(); ?>
-          <?php $titulo_acordion = get_sub_field('titulo_acordion');?>
-          <h2 class="pb-2 pt-5 titulo"><?php echo $titulo_acordion ?></h2>
+        <?php if (have_rows('titulo')): while (have_rows('titulo')) : the_row(); ?>
+        <?php $titulo_acordion = get_sub_field('titulo_acordion');?>
+        <hr class="hr px-0 py-sm-0 px-lg-0 col-lg-9 col-12">
+        <h2 class="pb-2 pt-5 titulo"><?php echo $titulo_acordion ?></h2>
       <?php endwhile; endif; ?>
 
       <div class="px-0 py-sm-0 px-lg-0 col-lg-9 col-12">
@@ -37,7 +38,6 @@ get_header(); ?>
             </div>
           </div>
         </div>
-        <!-- <hr class="hr"> -->
       </div>
       <?php endwhile; endif; ?>
       <hr class="px-0 py-sm-0 px-lg-0 col-lg-9 col-12 mb-5">
