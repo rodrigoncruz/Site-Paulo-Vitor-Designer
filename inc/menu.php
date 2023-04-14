@@ -10,7 +10,7 @@
 </div>
 <div class="d-none d-sm-block">
     <?php 
-    if(is_page('home')):
+    if(is_page('home') || is_page('newsletter')):
         wp_nav_menu(
             array(
                 'theme_location'    => 'menu_home',
@@ -73,7 +73,7 @@
 
 <!-- Plugin Mobile-->
 <?php 
-if(is_page('home')): 
+if(is_page('home') || is_page('newsletter')): 
  ?>   
 <div class="d-block d-sm-none d-flex">
     <?php

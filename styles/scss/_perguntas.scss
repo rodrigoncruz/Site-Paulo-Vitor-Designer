@@ -51,14 +51,14 @@
             height: 20px;
             margin-left: auto;
             content: "";
-            background-image: url("/wp-content/uploads/2023/03/Union.svg");
+            background-image: url("https://www.paulovitordesigner.com.br/teste/wp-content/uploads/2023/03/Union.svg");
             background-repeat: no-repeat;
             background-size: 20px;
             transition: transform .2s ease-in-out;
         }
 
         .accordion-button:not(.collapsed)::after {
-            background-image: url("/wp-content/uploads/2023/03/Union.svg");
+            background-image: url("https://www.paulovitordesigner.com.br/teste/wp-content/uploads/2023/03/Union.svg");
             transform: rotate(-180deg);
         }
 
@@ -71,10 +71,6 @@
             border-radius: 0;
             
         }
-
-        // .titulo {
-        //     margin-top: 20px;
-        // }
         
     }
 

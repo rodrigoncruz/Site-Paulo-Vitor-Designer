@@ -1,0 +1,123 @@
+.page-template-page-newsletter {
+    .bg-blue {
+        background-color: $color-blue-hover;
+    }
+
+    .bg-black {
+        background: linear-gradient(to bottom, rgb(0, 0, 0) 34%, #1013C7 34%);
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+
+    .card-news {
+        width: 786px;
+        max-width: 100%;
+        height: 776px;
+        background-color: $color-white;
+        padding: 79px 132px 0 98px;
+
+        @media (max-width: 800px) {
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 35px;
+            color: $color-black;
+            margin-bottom: 16px;
+            padding-right: 53px;
+
+            @media (max-width: 800px) {
+                font-size: 20px;
+                padding-right: 0px;
+                line-height: 25px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: $color-black;
+        }
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="email"] 
+    {
+        width: 100%;
+        max-width: 490px;
+        border: 2px solid rgba(189, 189, 189, 1);
+        transition: border-color 0.3s ease-in-out;
+        border-radius: 6px;
+        padding: 8px 0 8px 12px;
+        padding-left: 12px;
+        padding-top: 10px;
+    
+    input[type="text"]::placeholder {
+        text-indent: 12px;
+        }
+    }
+    
+    textarea {
+        width: 100%;
+        border: 3px solid $color-white;
+        transition: border-color 0.3s ease-in-out;
+        border-radius: 6px;
+        padding-left: 12px;
+        padding-top: 10px;
+    }
+    
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: $color-yellow;
+    }
+    
+    input[type="submit"] {
+        padding: 15px 75px;
+        border-radius: 6px;
+        color: $color-black;
+        background-color: $color-yellow;
+        border:none;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 14px;
+        transition: all 0.3s ease-in-out;
+    
+        &:hover {
+            background-color: $color-yellow-hover;
+        }
+    }
+
+    .wpcf7-list-item {
+        display: inline-block;
+        margin: 24px 0 16px 0;
+
+        &-label {
+            font-size: 12px;
+            font-weight: 500px;
+            margin-left: 11px;
+        }
+    }
+
+    input[type="checkbox"] 
+    {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #828282;
+        border-radius: 3px;
+    }
+
+    .bnt-icons-mobile li {
+        margin-left: 0px;
+        margin-top: 215px;
+    
+        &:not(:first-child) {
+            padding-left: 40px;
+        }
+    }
+}
+
