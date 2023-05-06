@@ -5,7 +5,7 @@
           <h3 class="principal-zap"><?php the_field('titulo_rodape','options'); ?></h3>
           <h3 class="sub-zap"><?php the_field('subtitulo_rodape','options'); ?></h3>
           <a class="zap" href=<?php the_field('link_rodape','options');?>><img class="px-1"
-              src=<?php echo get_template_directory_uri() . '/assets/img/whatsapp.svg' ?>><?php the_field('texto_botao_titulo_rodape','options');?></a>
+              src=<?php echo get_template_directory_uri() . '/assets/img/whatsapp.svg' ?> alt="zap"><?php the_field('texto_botao_titulo_rodape','options');?></a>
           <p class="mb-0 d-none d-lg-block"><?php the_field('telefone_rodape','options');?></p>
           <span class="d-none d-lg-block"><?php the_field('descricao_telefone','options');?></span>
           <div class="bnt-icons d-flex d-none d-lg-block">
@@ -46,7 +46,7 @@
       <div class="container logo-rodape d-flex justify-content-between align-items-center">
         <div>
           <a href=<?php the_field('link_logo','options');?>><img
-              src=<?php the_field('logo_paulo','options');?>></a><?php the_field('paulo_vitor_designer','options');?>
+              src=<?php the_field('logo_paulo','options');?> alt="logo"></a><?php the_field('paulo_vitor_designer','options');?>
         </div>
         <div class="menu-footer d-none d-lg-block">
           <?php
