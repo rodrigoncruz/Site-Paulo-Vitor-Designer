@@ -19,7 +19,7 @@ get_header(); ?>
 
     <?php if (have_rows('titulo')): while (have_rows('titulo')) : the_row(); ?>
     <?php $titulo_acordion = get_sub_field('titulo_acordion');?>
-    <hr class="hr px-0 py-sm-0 px-lg-0 col-lg-9 col-12">
+    <hr class="hr mt-0 px-0 py-sm-0 px-lg-0 col-lg-9 col-12">
     <h2 class="pb-2 pt-5 titulo"><?php echo $titulo_acordion ?></h2>
     <?php endwhile; endif; ?>
 
@@ -43,7 +43,7 @@ get_header(); ?>
       </div>
     </div>
     <?php endwhile; endif; ?>
-    <hr class="px-0 py-sm-0 px-lg-0 col-lg-9 col-12 mb-5">
+    <hr class="px-0 mt-0 py-sm-0 px-lg-0 col-lg-9 col-12 mb-5">
 
     <p class="mb-5">Fico feliz que meu trabalho tenha lhe despertado interesse. Caso tenha alguma dúvida<br> específica,
       entre em contato.<br><br>

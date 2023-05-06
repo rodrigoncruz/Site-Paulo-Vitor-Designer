@@ -55,6 +55,7 @@
             background-repeat: no-repeat;
             background-size: 20px;
             transition: transform .2s ease-in-out;
+            margin-top: 8px;
         }
 
         .accordion-button:not(.collapsed)::after {
