@@ -21,7 +21,7 @@
                     <div class="d-flex align-items-center">
                         <div class="nav-bnt d-none d-none d-lg-block">
                             <a
-                                href=<?php the_field('link_orcamento','options'); ?>><?php the_field('texto_orcamento','options'); ?></a>
+                                href=<?php the_field('link_orcamento','options'); ?> target="_blank"><?php the_field('texto_orcamento','options'); ?></a>
                         </div>
                         <div class="bnt-icons d-flex">
                             <ul class="d-flex nav-icon mb-0">
@@ -29,7 +29,7 @@
                                     $logotipo = get_sub_field('logotipo');
                                     $link_rede = get_sub_field('link_rede'); ?>
                                 <li class="d-none d-lg-block">
-                                    <a href=<?php echo $link_rede ?>><img src=<?php echo $logotipo ?>
+                                    <a target="_blank" href=<?php echo $link_rede ?>><img src=<?php echo $logotipo ?>
                                             alt="Logotipo Redes Sociais"></a>
                                 </li>
                                 <?php endwhile; endif; ?>

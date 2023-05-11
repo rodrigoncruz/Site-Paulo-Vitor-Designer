@@ -1,4 +1,3 @@
-
 <div class="logo">
     <?php if(has_custom_logo() ): ?>
         <?php the_custom_logo(); ?>
@@ -7,6 +6,9 @@
             <img src=<?php echo get_template_directory_uri() . '/assets/img/logo.png';?> alt="Logo Paulo Vitor Designer">
         </a>
     <?php endif; ?>
+</div>
+<div class="nav-bnt d-block d-sm-none mx-auto">
+    <a href=<?php the_field('link_orcamento','options'); ?> target="_blank"><?php the_field('texto_orcamento','options'); ?></a>
 </div>
 <div class="d-none d-sm-block">
     <?php 
@@ -132,3 +134,4 @@ endif
         ?>
 
 </div>
+

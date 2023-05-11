@@ -4,7 +4,7 @@
         <div class="col-md-6 title-zap">
           <h3 class="principal-zap"><?php the_field('titulo_rodape','options'); ?></h3>
           <h3 class="sub-zap"><?php the_field('subtitulo_rodape','options'); ?></h3>
-          <a class="zap" href=<?php the_field('link_rodape','options');?>><img class="px-1"
+          <a target="_blank" class="zap" href=<?php the_field('link_rodape','options');?>><img class="px-1"
               src=<?php echo get_template_directory_uri() . '/assets/img/whatsapp.svg' ?> alt="zap"><?php the_field('texto_botao_titulo_rodape','options');?></a>
           <p class="mb-0 d-none d-lg-block"><?php the_field('telefone_rodape','options');?></p>
           <span class="d-none d-lg-block"><?php the_field('descricao_telefone','options');?></span>
@@ -14,7 +14,7 @@
                           $logotipo_rodape = get_sub_field('logotipo_rodape');
                           $link_rede_rodape = get_sub_field('link_rodape'); ?>
               <li>
-                <a href=<?php echo $link_rede_rodape ?>><img src=<?php echo $logotipo_rodape ?> alt=""></a>
+                <a target="_blank" href=<?php echo $link_rede_rodape ?>><img src=<?php echo $logotipo_rodape ?> alt=""></a>
               </li>
               <?php endwhile; endif; ?>
             </ul>
