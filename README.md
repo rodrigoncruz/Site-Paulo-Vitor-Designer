@@ -1,5 +1,6 @@
 # Site Paulo Vitor by Rodrigo Cruz
-https://www.linkedin.com/in/rodrigonascimentocruz/
+
+https://paulovitordesigner.com/
 
 #Tecnologias usadas para criação do tema:
 
